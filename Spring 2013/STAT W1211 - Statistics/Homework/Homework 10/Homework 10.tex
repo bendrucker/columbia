@@ -1,0 +1,89 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{array}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{10}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{6.2}
+	\subsection*{8}
+		\subsubsection*{a)}
+			$P \left [ z_{\alpha_1} \leq (\overline{X} - \mu) \frac{\sigma}{\sqrt{n}} \leq z_{\alpha_2} \right ] = 1-\alpha.$ Solving for $\mu: \overline{X} - z_{\alpha_2}  \frac{\sigma}{\sqrt{n}} \leq \mu \leq \overline{X} + z_{\alpha_1} \frac{\sigma}{\sqrt{n}}.\\
+			\left ( \overline{X} - z_{\alpha_2} \frac{\sigma}{\sqrt{n}} ,  \overline{X} + z_{\alpha_1}  \frac{\sigma}{\sqrt{n}} \right )$
+		\subsubsection*{b)}
+			$z_{\alpha_1} = 2.24; 
+				z_{\alpha_2} = 1.78. $ So the width is: $(2.24+1.78) \frac{\sigma}{\sqrt{n}} = 4.02 \frac{\sigma}{\sqrt{n}}.$ This is wider than the $3.96\frac{\sigma}{\sqrt{n}}$ width of the 7.5 interval. 
+\section*{7.2}
+	\subsection*{12}
+		$.81 \pm 2.58 \frac{.34}{\sqrt{110}} = (.73, .89)$
+	\subsection*{14}
+		\subsubsection*{a)}
+			$89.1 \pm 1.96 \frac{3.73}{\sqrt{169}} = (88.54, 89.66).$ This interval appears very precise. 
+		\subsubsection*{b)}
+			$ n = \left ( \frac{1.96*.16}{.5} \right )^2 = 245.9; n = 246.$	
+	\subsection*{18}
+		$\overline{x} - z_{1-.9} \frac{s}{\sqrt{n}} = 4.25 - 1.28 \frac{1.3}{\sqrt{75}} = 4.059$	
+	\subsection*{20}
+		$.15 \pm 2.58 \sqrt{ \frac{.15*.85}{4722}} = (.137, .163)$
+\section*{7.3}
+	\subsection*{28}
+	Via a $t$ table:
+		\subsubsection*{a} 1.341
+		\subsubsection*{b} 1.753
+		\subsubsection*{c} 1.708
+		\subsubsection*{d} 1.684
+		\subsubsection*{e} 2.704
+	\subsection*{30}
+	Via a $t$ table:			
+		\subsubsection*{a} $t_{.025, 10} = 2.228$
+		\subsubsection*{b} $t_{.025, 15} = 2.131$
+		\subsubsection*{c} $t_{.005, 15} = 2.947$
+		\subsubsection*{d} $t_{.005, 4} = 4.604$
+		\subsubsection*{e} $t_{.01, 24} = 2.492$
+		\subsubsection*{e} $t_{.005, 37} = 2.712$		
+				
+								
+		 	
+		 	
+				
+				 
+	 		
+%%%%%% End Content %%%%%%      
+\end{document}

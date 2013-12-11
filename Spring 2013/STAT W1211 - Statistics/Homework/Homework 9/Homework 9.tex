@@ -1,0 +1,106 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{array}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{9}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{6.2}
+	\subsection*{24}
+		Part 1:
+		\begin{align*} 
+			\frac{dp}{dl} = \frac{d}{dp} \ln \left [ \left ( \begin{array} {c} x+r-1 \\ x \end{array} \right ) p^r (1-p)^x \right ] &= 0 \\
+			\frac{r}{p}- \frac{x}{1-p} &= 0 \\
+			\hat{p} &= \frac{r}{r+x} \\
+			&= \frac{3}{17+3} = \frac{3}{20}
+		\end{align*}
+		Part 2:
+			\begin{align*}
+				Pr(X=x) &= \left ( \begin{array}{c} x+r \\ x \end{array} \right ) p^r (1-p)^x \\
+				l(p;x) &= \ln \left ( \begin{array}{c} x+r \\ x \end{array} \right ) + r \ln p + x\ln (1-p) \\
+				\frac{dl}{dp} &= \frac{r}{p} - \frac{x}{1-p} = 0
+			\end{align*}
+			The mle is the same. \\
+		Part 3: The mle is not the same in (17). 
+	\subsection*{28}
+		I don't even know how to start this. 
+		
+\section*{6 - Supplementary Exercises}
+	\subsection*{34}
+		$MSE(KS^2) = Var(KS^2) + Bias(KS^2) \\
+		Bias(KS^2) = E(KS^2) - \sigma^2 = K\sigma^2 - \sigma^2\\
+		Var(KS^2) = K^2Var(S^2) = K^2 * (E(S^2)^2) - (E(S^2))^2 = K^2 \left ( 
+		\frac{\sigma^4(n+1)}{n-1} - \sigma^{2^2} \right ) \\$
+		? ...
+	\subsection*{36}
+		$\sum x = 555.86; \sum x^2 = 15490; s = \sqrt{2.16}$. Median of $x_i - \tilde{x} = \frac{.89+.91}{2} = .86.$ The estimate is therefore $\frac{.86}{.6745} = 1.28.$
+	\subsection*{38}
+		I wasn't able to solve this. 
+\section*{7.1}
+	\subsection*{2}
+		\subsubsection*{a)}
+			$\overline{x} = \frac{114.4+115.6}{2} = 115$
+		\subsubsection*{b)}
+			The smaller interval (114.4, 115,6) corresponds to the smaller confidence level (90\%).
+	\subsection*{4}
+		\subsubsection*{a)}
+			$ 58.3 \pm \frac{1.96*3}{\sqrt{25}}$
+		\subsubsection*{b)}
+			$58.3 \pm \frac{1.96*3}{\sqrt{100}}$
+		\subsubsection*{c)}
+			$58.3 \pm \frac{2.58*3}{\sqrt{100}}$
+		\subsubsection*{d)}
+			$z_{(1-.82)/2} = 1.34 \Rightarrow 58.3 \pm \frac{1.34 * 3}{\sqrt{100}}$
+		\subsubsection*{e)}
+			$ n = \left ( \frac{2*2.58*3}{1} \right )^2 = 239.6 \rightarrow n=240$
+	\subsection*{6}
+		\subsubsection*{a)}
+			$8439 \pm \frac{100*1.645}{\sqrt{25}}$
+		\subsubsection*{b)}
+			$\alpha = (1-.92)/2 = .04; z_{.04} = 1.75\\
+			8439 \pm \frac{100*1.75}{\sqrt{25}}$			
+								
+		 	
+		 	
+				
+				 
+	 		
+%%%%%% End Content %%%%%%      
+\end{document}

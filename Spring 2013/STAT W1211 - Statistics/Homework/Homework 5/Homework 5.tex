@@ -1,0 +1,88 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{5}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{4.2}
+	\subsection*{20}
+		\subsubsection*{a)}
+			$F(Y) = \begin{cases}
+				0 \leq y \leq 5 &\Rightarrow \int_0^y \frac{y}{25}dy = \frac{y^2}{50} \\
+				5 \leq y \leq 10 &\Rightarrow \int_0^y f(y)dy = \int_0^5 f(y)dy + \int_5^y f(y)dy \\
+				&= \frac{1}{2} + \int_0^y\left [ \frac{2}{5} - \frac{y}{25} \right ] dy = \frac{2y}{5} - \frac{y^2}{50} -1
+			\end{cases}$ \\ \\ \\
+			\includegraphics[height=2in]{4-2--20a}
+		\subsubsection*{b)}
+			$ 0 < p \leq .5 \Rightarrow p=F(y_p) = \frac{y_p^2}{50} \rightarrow y_p = \sqrt{50p} \\
+			.5 < p \leq 1 \Rightarrow p = \frac{2y_p}{5} - \frac{y_p}{50}-1 \rightarrow y_p = 10-5\sqrt{2-2p}$
+		\subsubsection*{c)}
+			$E(Y) =\int_0^5 y\frac{y}{25}dy + \int_5^{10}y \left ( \frac{2}{5} - \frac{y}{25} \right )dy =5 \\
+			V(Y) = \left(\int_0^5 \frac{y^3}{25} \, dy+\int_5^{10} y^2 \left(\frac{2}{5}-\frac{y}{25}\right) \, dy\right)-5^2 = \frac{25}{6} $\\
+			For a single bus, the values are simply halved. So: $E(X) =2.5, V(X) = \frac{25}{12}$
+					
+\section*{4.3}
+	\subsection*{40}
+		\subsubsection*{a)}
+			$P(X \leq 40) = P \left (Z \leq \frac{40-43}{4.5} \right ) \approxeq 0.2546 \\
+			P(X >60) = 1- P(Z < \frac{60-43}{4.5}) \approxeq 1- 0.999... $
+		\subsubsection*{b)}
+			$ P(Z < z) = .75 \rightarrow z = .67 \rightarrow .67 = \frac{x-43}{4.5} \Rightarrow x = 46.015$
+	\subsection*{46)}
+		\subsubsection*{a)}
+			$$P(67 \leq X \leq 75) = P \left ( \frac{67-70}{3} < Z < \frac{75-70}{3}	\right ) \approxeq .953 - .159 = .794$$
+		\subsubsection*{b)}
+			$Z_{.05/2} = Z_{.025} = 1.96; 1.96 * 3 = 5.88. $
+		\subsubsection*{c)}
+			$E(RV) = .794 * 10 = 7.94$
+		\subsubsection*{d)}
+			$P(X \leq 73.84) = 0.89973\\
+			P(p = 0.9, n = 10, x = 9) = .387 \\
+			P(p = 0.9, n = 10, x = 10) = 0.349 \\
+			p = 1-0.387-.349 = .264$
+	\subsection*{48}
+		\subsubsection*{a)}
+		$p(1.72) - p(.55) =  .2485\\		p(.55)-p(0))+(p(1.72)-p(0))$
+				
+		
+			
+			
+%%%%%% End Content %%%%%%      
+\end{document}

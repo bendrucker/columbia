@@ -1,0 +1,101 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{6}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{5.1}
+	\subsection*{12}
+		\subsubsection*{a)}
+			\begin{align*}
+				P(X>3) &= \int_3^\infty \int_0^\infty f(x,y)dy dx \\
+				&= \int_3^\infty \int_0^\infty xe^{-x(1+y)}dydx \\
+				&= \int_3^\infty xe^{-x}\int_0^\infty e^{-xy}dydx \\
+				&= \int_3^\infty xe^{-x} \left [\frac{e^{-xy}}{-x} \right ]^\infty_0 dx \\
+				&= \int_3^\infty e^{-x} dx \\
+				&= \left[ -e^{-x} \right ]_3^\infty \\
+				&= .05
+			\end{align*}
+		\subsubsection*{b)}
+			$X:$
+				\begin{align*}
+					f(x) &= \int_y f(x,y) dy \\
+					&= \int_0^\infty xe^{-x(1+y)} dy \\
+					&= xe^{-x} \int_0^\infty e^{-xy} dy \\
+					&= xe^{-x} \left [ \frac{e^{-xy}}{-x} \right ]^\infty_0 \\
+					&= e^{-x} \Leftrightarrow x\geq 0
+				\end{align*}
+			$Y:$
+				\begin{align*}
+					f(y) &= \int_x f(x,y) dx \\
+					&= \int_0^\infty xe^{-x(1+y)} dx \\
+					&= \left [ x \left ( \frac{e^{-x(1+y)}}{{-1-y}} \right ) - \frac{e^{-x(1+y)}}{(1+y)^2} \right ]_0^\infty \\
+					&=\frac{1}{(1+y)^2} \Leftrightarrow y\geq 0
+				\end{align*}
+			No. The joint PDF is not a factor of the product of the marginal PDFs. 		
+		\subsubsection{c)}
+			$P(\max(X,Y) > 3) =1 - P(\max(X,Y) \leq 3) =1 - \int_0^3 xe^{-x} \left ( \int_0^3e^{-xy} dy \right ) dx = 1- \int_0^3 e^{-x} (1-e^{-3x} )dx = e^{-3} + 1 - \frac{1}{4} e^{-12} \approxeq .3$
+	\subsection{16}
+		\subsubsection{a)}
+			\begin{align*}
+				f(x_1,x_3) &= \int_{-\infty}^\infty f(x_1, x_2, x_3)dx_2 \\
+				&= \int_0^{1-x_1-x_3} kx_1x_2(1-x_3)dx_2 \\
+				&= 72x_1(1-x_3)(1-x_1-x_3)^2 \Leftrightarrow x_1,x_3 \geq 0; x_1+x_3 \leq 1. 
+			\end{align*}
+		\subsubsection*{b)}
+			$P(X_1+X_3 \leq .5) = \int_0^5 \int_0^{5-x_1} 72x_1(1-x_3)(1-x_1-x_3)^2 dx_1 dx_2 = .5312.$ Calculated using Wolfram Alpha. 
+		\subsubsection*{c)}
+			$f_{x_1}(x_1) = \int_{- \infty}^\infty f(x_1, x_3)dx_3 = \int	72x_1(1-x_3)(1-x_1-x_3)^2 dx_3 = 18x_1 -48x_1^2+36x_1^3-6x^5_1 \Leftrightarrow 0 \leq x_1 \leq 1.$
+\section*{5.2}
+	\subsection*{22}
+		\subsubsection*{a)}
+			$$ E(X+Y) = \sum_x \sum_y (x+y)p(x,y,) = (0+0)(.02) + (0+5)(.06)+(5+0)(.04) + ... + (10+15)(.01) = 14.1$$
+		\subsubsection*{b)}
+			$$E(\max(X,Y) = \sum_x \sum_y \max(x+y)p(x,y) = 0*.02 + 5*.06 + 5*.04 + ... + 15*.01 =9.6$$
+	\subsection*{32}
+		??
+	
+	\subsection*{36)}
+		??			 				 				
+		
+			
+			
+%%%%%% End Content %%%%%%      
+\end{document}

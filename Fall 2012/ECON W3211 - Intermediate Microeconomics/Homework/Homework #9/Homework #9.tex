@@ -1,0 +1,305 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\renewcommand{\thesection}{Question \arabic{section}} %% Prefix section headers
+\renewcommand\thesubsection{(\alph{subsection})} %% Prefix/suffix subsections
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{9}
+\newcommand{\hwkAuthors}{Ben Drucker, Douglas Kessel, Ethan Kochav}
+\newcommand{\hwkDueDate}{\date{11/27/12}}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{\hwkDueDate}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section[1]{}
+	\subsection[a]{}
+		Given a perfectly elastic demand function $D$:\\
+		\includegraphics[height=2in]{Charts/1a} \\
+		$ {PS}_0 = A+B+C < {PS}_t = A+B $. Producers are worse off by an amount defined by area $B$. Generally, the more elastic demand is relative to supply, the less the producers benefit from this scheme. 
+	\subsection[b]{}
+		Given a perfectly elastic supply function $S$, i.e. constant $MC$:\\
+		\includegraphics[height=2in]{Charts/1b}\\
+		$PS = 0$ before and after the subsidy and the government incurs a cost $C$. Generally, the government costs will exceed the change in consumer surplus as supply becomes more elastic relative to demand. 
+	\subsection[c]{}
+		Given a perfectly elastic demand function $D$: \\
+		\includegraphics[height=2in]{Charts/1c} \\
+		Producer surplus is initially ${PS}_0$. $Q_D = 0$ at $ P = P^{'}$ so ${PS}^{'} = 0.$ Generally, the more elastic demand is relatively to supply, the worse off producers are as a result of a price ceiling.
+\section[2]{}
+	\subsection[a]{}
+		\includegraphics[height=3in]{Charts/2a}
+	\subsection[b]{}
+		\includegraphics[height=3in]{Charts/2b} \\
+		Incidence on producers: $\frac{C+G+H}{C+G+H+B+E+F+I}$\\
+		Incidence on consumers: $\frac{B+E+F+I}{B+E+F+I+C+G+H}$ \\
+		Total cost to government: $A+B+C+D+E+F+G+H+I$
+	\subsection[c]{}
+		The government underestimated the cost. By reducing the price of college attendance for students to $P_S$, the government has increased the number of students attending college to $Q^{'} > Q^{*} = 250000.$ The cost of the subsidy will be $5000*Q^{'}$ rather than 	$5000*Q^{*}$.
+	\subsection[d]{}
+		\begin{align}
+			\frac{dQ^D}{dP} &< 0 \\
+			\frac{dQ^S}{dP} &> 0 \\
+			\frac{dQ^S}{dP} - \frac{dQ^D}{dP} &> 0 \\
+			\therefore \frac{-\frac{dQ^D}{dP}}{\frac{dQ^S}{dP} - \frac{dQ^D}{dP}} &\in (0,1)
+		\end{align}
+	\subsection[e]{}
+		\setcounter{equation}{0}
+		\begin{align}
+			P_S = P_D = P &\therefore Q_S = Q_D = Q\\
+			\frac{\frac{P}{Q}}{\frac{P}{Q}} &= 1\\
+			\frac{-\frac{dQ^D}{dP}}{\frac{dQ^S}{dP} - \frac{dQ^D}{dP}} \frac{\frac{P}{Q}}{\frac{P}{Q}} &= \frac{-\frac{dQ^D}{dP}}{\frac{dQ^S}{dP} - \frac{dQ^D}{dP}}\\
+			\frac{-\frac{dQ^D}{dP}}{\frac{dQ^S}{dP} - \frac{dQ^D}{dP}} \frac{\frac{P}{Q}}{\frac{P}{Q}} &=\frac{-\epsilon^D}{\epsilon^S - \epsilon^D}
+		\end{align}
+	\subsection[f]{}
+		For $\epsilon^S = 0$: 
+		$$ \frac{-\epsilon^D}{\epsilon^S - \epsilon^D} =  \frac{-\epsilon^D}{0 - \epsilon^D} = 1. $$
+	\subsection[g]{}
+		\includegraphics[height=2in]{Charts/2g}\\
+		The subsidy $A$ entirely benefits producers. Consumers receive no benefits. 
+	\subsection[h]{}
+		The government did not succeed in getting more students into college. It also did not make college more affordable.
+\section[3]{}
+	\subsection[a]{}
+		$Q_{import} = Q_{D} - Q_{{S}_{domestic}} = 600-3.5P-.5P = 600-4P.$
+	\subsection[b]{}
+		$Q_I = 600 - 4*120 = 120.~ P=120.~Q_D = 600-3.5*120=180.$
+	\subsection[c]{}
+		\includegraphics[height=2in]{Charts/3c}
+	\subsection[d]{}
+		The domestic price increases and quantity demanded falls. $\Delta CS = -R - DWL.$\\
+		\includegraphics[height=3in]{Charts/3d}
+	\subsection[e]{}
+		$Q_I=Q_{S_{world}} = 600-4P = P \Rightarrow P = 120 \Rightarrow Q_I =  120.~ Q_D=400-3.5*120 =180. $
+	\subsection[f]{}
+		\includegraphics[height=2.5in]{Charts/3f}\\
+		Domestic consumption shifts to $Q^{'}$ and domestic price shifts to $P_D$. 
+	\subsection[g]{}
+		\includegraphics[height=2in]{Charts/3g}\\
+		Only region $A$ is raised from US consumers. Region $B$ comes from foreign producers. 
+	\subsection[h]{}
+		Yes. 
+		\begin{align*}
+			&P = Q^S_{world} = Q_I =600-4(P+t)\\
+			&P = 112 = Q_I, P+t=122\\
+			&Q^D_{US} = 600-3.5*122 = 173 , Q^S_{US} = .5*122 = 61\\
+			&\Delta Surplus_{US} = (Q^D_{US}-Q^S_{US})(P_W-P)-.5(P+t-P_W)(180-Q^D_{US}+Q^S_{US}-60)\\
+			&\Delta S_{US} = (173-61)(120-112)-.5(122-120)(180-173+61-60) = 888
+		\end{align*}
+		This indicates that region $B$ in the graph for part B exceeds the DWL (shaded). 
+	\subsection[i]{}
+		Using Taylor approximations:
+		\setcounter{equation}{0}
+		\begin{align}
+			\Delta Q^D \approx \frac{dQ^D}{dP^D}\Delta P^D &, ~ \Delta Q^S \approx \frac{dQ^S}{dP^S}\Delta P^S \\
+			\frac{dQ^D}{dP^D}\Delta P^D & \approx \frac{dQ^S}{dP^S}\Delta P^S \\
+			\frac{\Delta P^D}{\Delta P^S} & \approx \frac{\frac{dQ^D}{dP^D}}{\frac{dQ^S}{dP^S}} \\
+			\frac{\Delta P^D}{\Delta P^D - t} & \approx \frac{\frac{dQ^D}{dP^D}}{\frac{dQ^S}{dP^S}}
+		\end{align}		
+\section[4]{}
+	\subsection[a]{}
+		\begin{align*}
+			MC = \frac{dC}{dQ_H} &= .02Q_H + 3 = P\\
+			Q^S_H &= 50P-150 \\
+			Q^S_I &= 6Q^S_H = 300P-900
+		\end{align*}
+	\subsection[b]{}	
+		$300P-900=1580-10P \Rightarrow P = 8,~ Q=300*8-900=1500$
+	\subsection[c]{}
+		\begin{align*}
+			Q^D &= 1580-10P\\
+			P^D &= \frac{1580-Q^D}{60}\\
+			\frac{1580-Q^D}{60} &= .02Q+3 \Rightarrow Q = 250
+		\end{align*}
+		\includegraphics[height=2in]{Charts/4c}
+	\subsection[d]{}
+		$C(Q_A) = .05Q_A^2+205-.5*250=.05Q_A^2+80$
+		\begin{align}
+			MC(Q_A) &= .1Q_A \\
+			AC(Q_A) &= .05Q_A + \frac{80}{Q_A}\\
+			.1Q_A &= .05Q_A + \frac{80}{Q_A}\\
+			Q_A &= 40
+		\end{align}			
+	\subsection[e]{}
+		Benefit. \\
+		\includegraphics[height=2.5in]{Charts/4e}
+	\subsection[f]{}
+		He will not produce more or less of either. Although honey production acts as an external benefit on the orchard, the $MC$ of producing more than $Q_H = 250$ to the apiary exceeds the decrease in $MC$ to the orchard. Changing the production of the orchard has no effect on the apiary and so there is no reason to expect its production to change. 
+	\subsection[g]{}
+	For the apiary: 
+		$$R(250)=250*8=2000.~R(275)=2000. $$
+		$$ C(250) = .01(250)^2+3*250+100 = 1475.~ C(275) = .01(275)^2+3(275)+100=1681.25$$
+		$$\Delta \Pi = -206.25$$
+	For the orchard: 
+		$$C(Q_H=250) = .05(40)^2 + 205 -.5(250) = 160$$
+		$$C(Q_H=275) = .05(40)^2 + 205-.5(275) = 147.5$$
+		$$\Delta \Pi = - \Delta C = 12.5	$$
+	\subsection[h]{}
+		\includegraphics[height=2.5in]{Charts/4h} \\
+		The top portion of the DWL triangle (shaded) represents a fall in producer surplus. The additional bottom shaded area from $Q=250$ to $Q=275$ represents the external benefits. 
+	\subsection[i]{}
+		Apiary: $-MC=.-.02Q_H-3$\\
+		Orchard: $\frac{\partial C(Q_A)}{\partial Q_H} = .5$
+	\subsection[j]{}
+		$Q_H=250.$ For $Q \geq 250$ the marginal cost to the apiary exceeds the marginal benefit to the orchard of producing additional honey.
+\section[5]{}
+	\subsection[a]{}
+		$P^{COPPER}=80\\
+		Q^{IRON}=100$
+		\begin{align*}
+		Q^D&=1-.5P^{ZINC}-.25*80+.56*100\\
+		&=1-.5P^{ZINC}-20+56\\
+		&=37-.5P^{ZINC}
+		\end{align*}
+		\begin{align*}
+		&37-.5p^{ZINC}=-.5+.25P^{ZINC}\\
+		&.75P^{ZINC}=37.5\\
+		&P^{ZINC}=50\\
+		&Q^{ZINC}=37-.5*50=37-25=12\\
+		\end{align*}
+		\includegraphics[height=2in]{Charts/5a}
+	\subsection[b]{}
+		\begin{align*}
+		&1-.5P^{ZINC}-.25P^{COPPER}+.56Q^{IRON}=-.5+P^{ZINC}\\
+		&1-.25p^{COPPER}+.56Q^{IRON}=.75P^{ZINC}\\
+		&P^{ZINC}=4/3-1/3P^{COPPER}+56/75Q^{IRON}\\
+		\end{align*}
+		$\frac{\partial{P^{ZINC}}}{\partial{P^{COPPER}}}=-\frac{1}{3}\\
+		\frac{\partial{P^{ZINC}}}{\partial{Q^{IRON}}}=\frac{56}{75}$
+	\subsection[c]{}
+		\begin{align*}
+		&\frac{\Delta{P^{ZINC}}}{6}=-\frac{1}{3}\\
+		&\Delta P^{ZINC}=-2\\
+		&P^{ZINC}=48\\
+		&Q^{ZINC}=-.5+.25*48=11.5
+		\end{align*}
+		\includegraphics[height=2in]{Charts/5c}
+	\subsection[d]{}
+		\begin{align*}
+		&\frac{\Delta{P^{ZINC}}}{9.375}=\frac{56}{75}\\
+		&\Delta P^{ZINC}=7\\
+		&P^{ZINC}=57\\
+		&Q^{ZINC}=-.5+.25*(57)=13.75\\
+		\end{align*}
+		\includegraphics[height=2in]{Charts/5d}
+	\subsection[e]{}
+		\begin{align*}
+		&\Delta P^{ZINC}=7-2=5\\
+		&P^{ZINC}=55\\
+		&Q^{ZINC}=-.5+.25*55=13.25\\
+		\end{align*}
+		\includegraphics[height=2in]{Charts/5e}
+\section[6]{}
+	\subsection[a]{} 
+$Q^D_{Import}=182-.1P-(-25+.25P)=182-.1P+25-.25P=207-.35P\\$
+	\subsection[b]{} 
+$Q^D_{Import}=207-.35P=207-.35*500=32\\
+P_{Domestic}=500\\
+Q^D=182-.1*500=132\\
+Q^S_{US}=-25+.25*500=100\\$
+\includegraphics[height=2in]{Charts/6b}
+	\subsection[c]{} 
+%Diagrizzle
+	\subsection[d]{} 
+\begin{align*}
+Q^D_{Import}=&11=207-.35P\\
+&P=560\\
+&P_{Domestic}=560\\
+&Q^S_{US}=-25+.25*560=115
+\end{align*}
+\includegraphics[height=2in]{Charts/6d}
+	\subsection[e]{} 
+$CS_{Original}=A+B+C+E+F+G\\
+CS_{After}=A+B\\
+\Delta CS=-C-E-F-G\\
+PS_{Original}=D\\
+PS_{After}=C+D\\
+\Delta PS=C\\
+DW=E+F+G\\$
+
+
+	\subsection[f]{} 
+\begin{align*}
+&Q^D=182-.1*560=126\\
+&\Delta CS=-(60*126+((132-126)*60)/2)=-\$7740
+\end{align*}
+	\subsection[g]{} 
+The import quota resulted in a dead-weight loss to society because less of the good is ultimately traded, and it is traded at a higher price. % notcompletely sure about the second part of that explanation
+	\subsection[h]{} 
+Rent$=60*11=660$
+	\subsection[i]{} 
+$560-500=60$\\
+\section[7]{}
+	\subsection[a]{} 
+$\frac{\partial{Q^S}}{\partial{P}}*\frac{P}{Q}=$Elasticity of Supply\\
+$\frac{\partial{Q^S}}{\partial{P}}*\frac{20}{10}=3.8\\
+\frac{\partial{Q^S}}{\partial{P}}=1.9\\$
+$\frac{\partial{Q^S}}{\partial{P}}*\frac{P}{Q}=$Elasticity of Demand\\
+$\frac{\partial{Q^S}}{\partial{P}}*\frac{20}{10}=-.2\\
+\frac{\partial{Q^S}}{\partial{P}}=-.1\\$
+%Diagrizzle
+\includegraphics[height=2in]{Charts/7a}
+	\subsection[b]{} 
+Consumer's Burden$=\frac{B}{B+C}$\\
+Producer's Burden$=\frac{C}{B+C}$\\
+Tax Revenue$=B+C$\\
+Deadweight Loss$=E+F$\\
+\includegraphics[height=2in]{Charts/7b}
+
+	\subsection[c]{} 
+Deadweight loss is the net loss in surplus after some event shifts the market out of equilibrium.  A per-unit tax casues deadweight loss
+because it decreases the total quantity of a good traded, regardless of how it shifts the prices. If the government wants to minimize deadweight
+loss, it should impose a tax when demand and supply are more inelastic.
+	\subsection[d]{} 
+\begin{align*}
+\Delta P^S&=-.05t\\
+&=-.05*(2)\\
+&=-.1\\
+&P^S=19.9\\
+&P^D=21.9\\
+&\Delta Q=-.1*1.9=-.19\\ 	
+&Q=9.81\\
+\end{align*}
+	\subsection[e]{} 
+Consumer's burden$=.05$, Supplier's burden$=.95$,
+	\subsection[f]{} 
+$P^D=22, P^S=20, Q=10.$
+The consumers paid all of the tax.\\
+\includegraphics[height=2in]{Charts/7f}
+																	
+							
+															
+				
+%%%%%% End Content %%%%%%      
+\end{document}

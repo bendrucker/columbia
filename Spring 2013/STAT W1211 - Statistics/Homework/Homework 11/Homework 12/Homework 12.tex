@@ -1,0 +1,98 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{array}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{12}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{8.1}
+	\subsection*{14}
+		\subsubsection*{a)}
+			Given $\sigma_{\overline{x}} = \frac{.2}{\sqrt{25}} = .04$ and $\mu =10$:\\
+			$P[Z \geq \phi (\frac{10.1004-10}{.04})] + P[Z \leq \Phi (\frac{9.8940-10}{.04})] = .006 + 004 = .01 = \alpha$ 
+		\subsubsection*{b)}
+			$\mu = 10.1: \beta (10.1) = P(9.8940 < \overline{x} < 10.1004) = P(-5.15 < Z .01) = .504\\
+			\mu = 9.9: \beta(9.9) = P(-.15 < Z < 5.01) = .5596.$ \\\\
+			This is not desirable. A difference from $\mu$ in either direction is equally important so we want $\beta(\mu + k) = \beta(\mu - k)$.  
+\section*{8.2}
+	\subsection*{16}
+		\subsubsection*{a)}
+			For d.f. = 15, $\alpha = P(t\leq 3.73) = .001.$
+		\subsubsection*{b)}
+			For d.f. = 23, $\alpha = P(t \leq 2.5) = .01.$
+		\subsubsection*{c)}
+			For d.f. = 30, $\alpha = P(t \leq 1.697) + P(t \leq 1.697) = .05 * 2 =.1.$		
+	\subsection*{18}
+		\subsubsection*{a)}
+			$\left | \frac{72.3-75}{1.8} \right | = 1.5 $ SDs
+		\subsubsection*{b)}
+			$Z = -1.5 > 2.33$. Don't reject.  
+		\subsubsection*{c)}
+			$\alpha = \Phi (-2.88) = .002$
+		\subsubsection*{d)}
+			$\Phi \left ( -2.88 + \frac{75-70}{\frac{9}{5}} \right ) = \Phi(-.1) = .46 \Rightarrow \beta(70) = .5398$
+		\subsubsection*{e)}
+			$n = \left( \frac{9(2.88+2.33)}{75-70} \right )^2 = 87.95 \Rightarrow n = 88$
+		\subsubsection*{f)}
+			$\alpha(76) = P(Z < -2.33) = P(\overline{X} < 72.9) = \phi \left ( \frac{72.9 - 76}{.9} \right ) = .0003$
+	\subsection*{20}
+		At $\alpha = .05$, $H_0$ is rejected if $z< 1.645. z = -2.14,$ so $H_0$ is rejected. At .01, $z < -2.33$ rejects and so we don't reject. Given the very favorable price, I'd choose .01.
+	\subsection*{32}
+		$H_0 : \mu = 15. H_a: \mu < 15; t = \frac{\overline{X} - 15}{s / \sqrt{115}}; t = -6.17\\
+		t_{.005,114} =-1.66 > -6.17.\\$
+		The data indicate that the observed daily intake is below the DRI. 
+\section*{8.3}
+	\subsection*{38}
+		\subsubsection*{a)}
+			$H_0: p=.1; H_a: p\not =.1;$ Reject $H_0$ if $z \geq 1.96. \hat{p} = 
+			\frac{14}{100}, z= 1.33.$ Null hypothesis cannot be rejected. 
+		\subsubsection*{b)}
+			??
+		\subsubsection*{c)}
+			?? 
+	\subsection*{40}
+		$H_0: p = \frac{2}{3}; H_a: p \not = \frac{2}{3}; \hat{p} = \frac{80}{124}; Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}} = -.508; P(Z < -.508) = .306.$ This value rejects $H_0$. 
+	\subsection*{46}
+		$p_0 = .035; \hat{p} = .03; Z = -.61; Z_{.01} = 2.33.$ Therefore the null hypothesis that humans and robots have the same defect rate cannot be rejected. 			
+				
+				 
+	 		
+%%%%%% End Content %%%%%%      
+\end{document}

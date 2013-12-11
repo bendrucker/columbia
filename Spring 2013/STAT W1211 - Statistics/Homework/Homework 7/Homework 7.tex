@@ -1,0 +1,139 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{array}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{7}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{5.3}
+	\subsection*{38}
+		\subsubsection*{a)} The first row ($P_{t_0}$) represents the PMF of $T_0$: \\ \\
+			\begin{tabular}{c || c | c | c | c | c | c}
+				\hline
+				$t_0$ & 0 & 1 & 2 & 3 & 4 & $\sum$\\ \hline \hline
+				$P(t_0)$ & .04 & .2 & .37 & .3  & .09 & 1 \\ \hline
+				$t_0P(t_0)$ & 0 & .2 & .74 & .9 & .36 & 2.2\\ \hline
+				$t_0^2P(t_0)$ & 0 & .2 & 1.48 & 2.7 & 1.44 & 5.82\\
+				\hline				
+			\end{tabular}
+		\subsubsection*{b)}
+			$\mu_{T_0} = \sum t_0 P(t_0) = 2.2;~~ \mu_{T_0} = 2\mu $
+		\subsubsection*{c)}
+			$\sigma^2_{T_0} = \sum t_0^2 P(t_0) - \mu_{T_0}^2 = 5.82 - 2.2^2 = .98;~~ \sigma^2_{T_0} = 2\sigma^2$	 	
+		\subsubsection*{d)}
+			$E(T_0) = 4.4;~~ V{T_0} = 1.96$
+		\subsubsection*{e)}
+			$P(T_0 = 8) = .09^2 = .0081; ~~ P(T_0 \geq 7) = P(T_0 = 8) + 2*.3*.09 = .0081 + .054 = .0621$
+	\subsection*{42)}
+		\subsubsection*{a)}
+			\begin{tabular}{c || c | c | c | c | c | c | c}
+				$\overline{x}$ & 27.75 & 28 & 29.7 & 29.95 & 31.65 & 21.9 & 33.6 \\ \hline
+				$p(\overline{x})$ & $\frac{4}{30}$ & $\frac{2}{30}$ & $\frac{6}{30}$ & $\frac{4}{30}$ & $\frac{8}{30}$ & $\frac{4}{30}$ & $\frac{2}{30}$
+			\end{tabular}
+		\subsubsection*{b)}
+			\begin{tabular}{c || c | c | c}
+				$\overline{x}$ & 27.75 & 31.65 & 31.9 \\ \hline
+				$p(\overline{x})$ & $\frac{1}{3}$ & $\frac{1}{3}$ & $\frac{1}{3}$
+			\end{tabular}
+		\subsubsection*{c)}		
+			$E(X)_a = E(X)_b = \mu = 30.4\overline{3}$						
+\section*{5.4)}
+	\subsection*{46}
+		\subsubsection*{a)}			 			$E(\overline{X}) = \mu = 12 \\ \sigma_{\overline{x}} = \frac{\sigma_x}{\sqrt{n}} = \frac{.04}{4} = .01$
+		
+		\subsubsection*{b)}
+			$ E(\overline{X}) = \mu =12\\
+			\sigma_{\overline{x}} = \frac{\sigma_x}{\sqrt{n}} = \frac{.04}{8} = .005 $
+		\subsubsection*{c)}
+			The second sample, which has less variability due to the larger $n$.
+	\subsection*{48}
+		\subsubsection*{a)}
+			Yes. Given that the population is men 18 years of age, it is plausible to assume a symmetric distribution around an unknown mean with decreasing frequency with increasing distance from the mean. If the population were all 18 year olds, the population would likely be bi-model because of sex differences.
+		\subsubsection*{b)}		
+			$\mu = 85; ~~ \sigma_{\overline{x}} = \frac{15}{\sqrt{277}} \approxeq .901262\\ 
+			P(\overline{X} \geq 86.3) = 1- P(\overline{X} \leq 86.3) = 1- P \left(Z < \Phi \left [ \frac{86.3 - 85}{.901262} \right ] \right) = 1- P(Z < 1.442) = 1- .425 = .575
+			$
+		\subsubsection*{c)}
+			$\mu = 82; ~~ \sigma_{\overline{x}} = .901262\\ 
+			P(\overline{X} \geq 86.3) = 1- P(\overline{X} \leq 86.3) = 1- P \left(Z < \Phi \left [ \frac{86.3 - 82}{.901262} \right ] \right) = 1- P(Z < 4.77) \approx 0
+			$. \\ 82 cm would not be reasonable.
+	\subsection*{56)}
+		\subsubsection*{a)}
+			$ \mu = np = 1000 *.1 = 100; ~~ \sigma = \sqrt{\mu(1-p)} = \sqrt{100*.9} = 9.486832981.$
+			\begin{align*}
+				P(X \leq 125) &= P \left ( \frac{X - \mu}{\sigma} \leq \frac{125 - \mu}{\sigma} \right ) \\
+				&= P \left ( Z \leq \frac{125-100}{9.486832981} \right ) \\
+				&= P(Z < 2.64) \\
+				&= .996		
+			\end{align*}
+		\subsubsection*{b)}
+			Let $\Delta$ be the difference in errors between the two independent transmissions:
+			\begin{align*}
+				P(|\Delta| \leq 50 &= P(-50 \leq \Delta \leq 50) \\
+				&= P \left ( \frac{-50}{\sigma} \leq Z \leq \frac{50}{\sigma} \right ) \\
+				& \approx P \left ( \frac{50}{\sqrt{2np(1-p)}} = \frac{-50}{\sqrt{2*1000*.1*(1-.1)}} = -3.7268 \leq Z \leq 3.7268 \right ) \\
+				&= .999903 - .00009697 = .99980603			
+			\end{align*}
+\section{5.5}
+	\subsection*{60}
+		$\mu_Y = \frac{1}{2}(\mu_1 + \mu_2) - \frac{1}{3}(\mu_3 + \mu_4 + \mu_5)= -1 \\
+		\sigma_Y^2 = \frac{1}{4} \sigma_1^2 + \frac{1}{4} \sigma_2^2 + \frac{1}{9} \sigma_3^2 + \frac{1}{9} \sigma_4^2 + \frac{1}{9} \sigma_5^2 = 3.167;~ \sigma_Y = \sqrt{3.167} = 1.7795\\
+		P(Y \geq 0) = P \left ( Z \geq \frac{1}{1.7795} \right ) = P(Z \geq .56) = 1-P(Z \leq .56) = .2877 \\
+		P(-1 \leq Y \leq 1) = P \left (0 \leq Z \leq \frac{2}{1.7795} \right ) = P(Z < 1.12) = .369$
+	\subsection*{64)}
+		$X_1..X_5$ for morning, $X_6..X_{10}$ for evening.
+		\subsubsection*{a)}
+			$E(X_1+...+X_10) = 5E(X_1) + 5(X_6) = 5*4+5*5 = 45$
+		\subsubsection*{b)}	
+			$\sigma^2 = 5Var(X_1) + 5(X_6) = 5 \left ( \frac{8^2}{12} + \frac{10^2}{12} \right ) = \frac{820}{12} = 68.\overline{3}$
+		\subsubsection*{c)}
+			$E(X_1 - X_6) = E(X_1) - E(X_6) = 4-5 = -1 \\
+			Var(X_1-X_6) = Var(X_1) + Var(X_6) = \frac{64}{12} + \frac{100}{12} = 13.\overline{6}$
+		\subsubsection*{d)}
+			$E[(X_1+ ...+ X_5) - (X_6 + ... + X_{10})] = 5*4 - 5*5 = -5 \\
+			Var[(X_1+ ...+ X_5) - (X_6 + ... + X_{10})] =Var(X_1+ ...+ X_5) + Var(X_6 + ... + X_{10}) = 68.\overline{3}$
+	\subsection*{70}
+		\subsubsection*{a)}
+			$$ E(Y_i) = \frac{1}{2} \rightarrow E(W) = \sum_{i=1}^n iE(Y_i) = \frac{1}{2} \sum_{i=1}^ni = \frac{n^2 + n}{2^2}	$$
+		\subsubsection*{b)}
+			$$ Var(Y_i) = \frac{1}{4} \rightarrow Var(W) = \sum_{i=1}^n i^2 Var(Y_i) = \frac{1}{4} \sum_{i=1}^n i^2 = \frac{(n^2+n)(2n+1)}{4 * 2^2}$$				
+			
+%%%%%% End Content %%%%%%      
+\end{document}

@@ -1,0 +1,206 @@
+
+
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\renewcommand{\thesection}{Question \arabic{section}} %% Prefix section headers
+\renewcommand\thesubsection{(\alph{subsection})} %% Prefix/suffix subsections
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{7}
+\newcommand{\hwkAuthors}{Ben Drucker, Douglas Kessel, Ethan Kochav}
+\newcommand{\hwkDueDate}{\date{11/7/12}}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{\hwkDueDate}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section[1]{}
+	\subsection[a]{}
+		$f(S,B)=\frac{\min[2S,B]}{12}$. Multiplying $S$ and $B$ by a constant $\lambda$, we see that $f$ exhibits constant returns to scale: 
+		$$ f(\lambda S, \lambda B) = \frac{\min[2\lambda S, \lambda B]}{12} = \frac{\lambda \min[2 S,  B]}{12} = \lambda f(S,B) $$
+	\subsection[b]{}
+		$\min[S,B]$ s.t. $f(S,B)=\overline{Q}$ \\
+		$S=6Q, B=12Q$
+\section[2]{}		
+	\subsection[a]{}
+		\begin{align*}
+			R &= 250Q \\
+			MR &= 250
+		\end{align*}
+	\subsection[b]{}
+		\begin{align*}
+			VC &= Q^2+200Q \\
+			MC &= 2Q + 200
+		\end{align*}
+	\subsection[c]{}
+		\begin{align}
+			MC &= MR \\
+			2Q + 200 &= 250 \\
+			Q &= 25 \\
+			\Pi(Q=25) &= 250*25 -(25^2+200*25) = 625
+		\end{align}
+	\subsection[d]{}
+		\begin{align*}
+			P_D = 1.5 & \Rightarrow \Pi = 1875\\
+			P_D = 3 & \Rightarrow \Pi = -1875
+		\end{align*}
+	\subsection[e]{}
+		$ V_E = \frac{1}{3} * 1 + \frac{2}{3} * 0 = \frac{1}{3} $
+	\subsection[f]{}
+		$ 1875 - \frac{1}{3} n = -1875 + n - \frac{1}{3} n \Rightarrow n = 3750, \Pi = 625.$
+\section[3]{}
+	\subsection[a]{}
+		\begin{align*}
+			\min[64x+y+8]  \textrm{ s.t. }  8x^{\frac{1}{3}} = \overline{Q} & \Rightarrow x =\left ( \frac{\overline{Q}}{8} \right ) ^3 \\
+			VC = 64x + y &= 2Q^{\frac{3}{2}} \\
+			TC = 64x+8 &= \frac{Q^3}{8}+8
+		\end{align*}	
+	\subsection[b]{}
+		\begin{align*}
+			MC &= \frac{3}{8}Q^2 \\
+			AC &= \frac{\frac{Q^3}{8}+8}{Q}\\
+			MC = AC & \Rightarrow Q = \sqrt[3]{32}
+		\end{align*}
+		\includegraphics[height=2in]{Charts/3b}
+	\subsection[c]{}
+		\begin{align}
+		\setcounter{equation}{0}
+			MRTS = \frac{\frac{4}{3} x^{-\frac{2}{3}} y^{\frac{1}{3}}}{\frac{4}{3}x^{\frac{1}{3}} y^{-\frac{2}{3}}} = \frac{y}{x} =64  & \Rightarrow y = 64x \\
+			\overline{Q} = 4x^{\frac{1}{3}}y^{\frac{1}{3}} &= 4x^{\frac{1}{3}}(64x)^{\frac{1}{3}} \\
+			x = \frac{\overline{Q}^{\frac{3}{2}}}{64}, & y = \overline{Q}^\frac{3}{2} \\
+			VC = 64x+y &= 2Q^\frac{3}{2} \\
+			TC &= VC
+		\end{align}
+	\subsection[d]{}
+		$ MC = 3 \sqrt{Q}. AC = 2\sqrt{Q} $
+	\subsection[e]{}
+		$ 8 = Q^\frac{3}{2} \Rightarrow Q=4.$ The long run and short run average costs must therefore be equal.
+	\subsection[f]{}	
+		\includegraphics[height=2in]{Charts/3e.pdf}
+\section[4]{}
+	\subsection[a]{}
+	\setcounter{equation}{0}
+		\begin{align}
+			MRTS = \frac{\frac{\partial Q}{\partial L}}{\frac{\partial Q}{\partial K}} = \frac{K}{L} = \frac{16}{4} = 4 & \Rightarrow K=4L \\
+			\overline{Q} = 20L^\frac{1}{4}(4L)^\frac{1}{4} &=20\sqrt{2L} \\
+			L = \frac{Q^2}{800}, & K=\frac{Q^2}{200} \\
+			C = 16L+4k=\frac{Q^2}{50} + \frac{Q^2}{50} &= .04Q^2
+		\end{align}
+	\subsection[b]{}
+		$ AC = \frac{.04Q^2+64}{Q}, MC = .08Q, MC = AC \Rightarrow Q=40.$ The firm exhibits an scale economies where $ Q < 40 $. \\
+		\includegraphics[height=2in]{Charts/4b}
+	\subsection[c]{}
+		$ Q_d(4) = 7600 \Rightarrow .08Q = 4 \Rightarrow Q=50. $ The firm earns supernormal profits. \\
+		\includegraphics[height=2in]{Charts/4c}
+	\subsection[d]{}
+		No. $40*.08 = 3.2$ is the long run market clearing price. $Q_s = 40$. $Q_d = 9200-400 * 3.2 = 7920.$ $ n = \frac{7920}{40} = 198. $
+\section[5]{}
+	\subsection[a]{}
+		\includegraphics[height=2in]{Charts/5a}
+	\subsection[b]{}
+		\setcounter{equation}{0}
+		\begin{align}
+			L=Q \textrm{ for } Q \leq 10, Q=10+\sqrt{L-10} \Rightarrow L = (Q-10)^2+10 \textrm{ for }  Q>10 \\
+			C(L)=2L \\
+			VC = 102Q \\
+			TC \textrm{ for } Q \leq 10 = 102Q + 230 \\
+			TC \textrm{ for } Q > 10 = 2 Q^2+60 Q+450\\
+			MC \textrm{ for }Q \leq 10 = 102\\
+			MC \textrm{ for }Q > 10 = 4Q+60 \\
+			AC \textrm{ for }Q \leq 10 = 102\\
+			AC \textrm{ for }Q > 10 = \frac{2(Q+15)^2}{Q}			
+		\end{align}
+	\subsection[c]{}				
+		\includegraphics[height=3in]{Charts/5c}		
+	\subsection[d]{}
+		$ P = 4Q_s+60 \Rightarrow Q_s = \frac{P-60}{4} \\
+		Q_s(160)=25.$ The firm earns supernormal profits at this price point. \\
+		\includegraphics[height=2.5in]{Charts/5d}
+	\subsection[e]{}
+		Firms will exit and the price will fall such that $Q=15$ and in turn $P=120.$
+	\subsection[f]{}
+		$P=120, Q=270, n=\frac{270}{15} = 18$
+	\subsection[g]{}
+		\begin{align*}
+			VC &= 2 Q^2+70 Q+220\\
+			MC &= 4Q+70 \\
+			AC &= 2 Q+\frac{250}{Q}+70 \\
+			MC &= AC \Rightarrow Q = 15									
+		 \end{align*}
+		\includegraphics[height=2in]{Charts/5g}	
+	\subsection[h]{}
+		$Q=15, P=130$. $Q_d = 390-130=260. n=\frac{Q_d}{Q_s} = \frac{260}{15} = 17.\overline{3} < 18.$ Firms will exit the market. 
+\section[6]{}
+	\subsection[a]{}
+		$ AC = \frac{.2Q^2+5Q+80}{Q}, MC = .4Q+5. AC = MC \Rightarrow Q=20. $ \\
+		\includegraphics[height=2in]{Charts/6a}
+	\subsection[b]{}
+		$ Q_s = 2.5(P-5). Q_{s_{aggregate}} = 15(P-5) $
+	\subsection[c]{}
+		$ 220-2P = 15(P-8) \Rightarrow P = 20 $\\
+		\includegraphics[height=2.5in]{Charts/6c}
+	\subsection[d]{}
+		$Q_s = 15(20-8) = 30.$ Finding elasticity: 
+		
+		$$ \eta_d = \frac{\partial Q_d}{\partial P} \frac{P}{Q_d} = -2\frac{20}{\frac{180}{6}} = -\frac{4}{3} $$
+		\includegraphics[height=2in]{Charts/6d}
+	\subsection[e]{}
+		\includegraphics[height=2in]{Charts/6e}
+\section[7]{}
+	\subsection[a]{}
+		\begin{align*}
+			AC = \frac{.2Q^2+5Q+500}{Q} \\
+			MC = .4Q +5 \\
+			AC = MC \Rightarrow Q= 50
+		\end{align*}
+		Plugging $ Q = 50$ into $MC$, we find that the shutdown point is $P=25.$ \\
+		\includegraphics[height=2in]{Charts/7a}
+	\subsection[b]{}
+		$MC(Q=80) = 25. Q_d(25) = 300. \frac{300}{50} = 6. $
+	\subsection[c]{}
+		$MC = .4Q + 8, AC = \frac{.2Q^2+8Q + 800}{Q}, AC=MC \Rightarrow Q=50. $\\
+		\includegraphics[height=2.5in]{Charts/7c}
+	\subsection[d]{}
+		$ P = .4Q + 8 \Rightarrow Q = 2.5(P-8). Q_{s_{aggregate}} = 15(P-8) $
+	\subsection[e]{}
+		$ 15(P-8) = 487.5 - 7.5P \Rightarrow P = 27. Q = 285.$
+	\subsection[f]{}
+		\includegraphics[height=2.5in]{Charts/7f}
+	\subsection[g]{}
+		Exit. Dividing the aggregate demand (285) by the optimal quantity supplied by each firm (50), we find that $n=5.7<6.$ Firms would therefore exit the market. 
+														
+				
+%%%%%% End Content %%%%%%      
+\end{document}
