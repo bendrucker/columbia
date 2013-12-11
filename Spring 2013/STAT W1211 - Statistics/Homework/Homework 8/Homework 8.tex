@@ -1,0 +1,111 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{array}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{8}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{5.5}
+	\subsection*{74}
+		$\mu_X = 50*.7 = 35; \sigma_X^2 = 50*.7*.3 = 10.5\\
+		\mu_Y = 50*.6 = 30; \sigma_Y^2 = 50*.6*.4 = 12 \\
+		\mu_{X-Y} = 35 - 30 =5; \sigma_{X-Y}^2 = 10.5+12 = 22.5\\
+		P(-5 < X < 5) \approxeq P \left ( \frac{-10}{\sqrt {22.5}} < Z < \frac{0}{\sqrt{22.5}} \right ) = .483$
+		
+\section*{5 (Supplementary)}
+	\subsection*{76}
+		No, only if either $\sigma$ is 0. When taking the percentile of sums, there will be a $\sqrt{\sigma_1^2 + \sigma_2^2}$ term. In order for this to equal the $\sigma_1 + \sigma_2$ term from the sum of the percentiles, at least one $\sigma$ would need to be 0. It would also hold true at $ Z=0$, the center of the distribution.
+	\subsection*{88}
+		\begin{align*}
+			E \left [(X+Y-t)^2 \right ] &= \int_0^1 \int_0^1 (x+y-t)^2 * f(x,y)dxdy\\
+			\frac{dE \left [(X+Y-t)^2 \right ]}{dt} = 0 &= -2 \int_0^1 \int_0^1 2(x+y-t)f(x,y)	\\ \\ 
+			\int_0^1 \int_0^1 tf(x,y)dxdy &=t \\
+			&= \int_0^1 \int_0^1 (x+y)f(x,y)dxdy = E(X+Y) = 1.1\overline{6}	
+		\end{align*}							
+	\subsection*{96}
+		Tried, couldn't answer it. 
+\section*{6.1}
+	\subsection*{8}
+		\subsubsection*{a)}
+			$\hat{p} = \frac{12}{80} = .15$
+		\subsubsection*{b)}
+			P(system works) = $\hat{p}^2 = \left ( \frac{80-12}{80} \right)^2 = \frac{289}{400} $
+	\subsection*{10}
+		\subsubsection*{a)}
+			$E(\overline{X}^2 = Var \overline{X} + [E(\overline{X})]^2 = \frac{\sigma^2}{n} + \mu^2.$ The bias is $\frac{\sigma^2}{n}$.
+		\subsubsection*{b)}
+			$E(\overline{X}^2 -kS^2) = E(\overline{X}^2) -kE(S^2) = \frac{\sigma^2}{n} + \mu^2 -k\sigma^2.$ The estimator is unbiased where $ k = \frac{1}{n}.$
+	\subsection*{16}
+		\subsubsection*{a)}
+			$E[\delta \overline{X} + \overline{Y}(1-\delta)] = \delta E(\overline{X} + (1-\delta)E(\overline{Y}) = \delta \mu + \mu(1-\delta) = \mu $
+		\subsubsection*{b)}
+			$Var[\delta \overline{X} + (1-\delta)\overline{Y}] = \delta^2 * Var(\overline{X}) + (1- \delta)^2 * Var(\overline{Y}) = \frac{\delta^2 \sigma^2}{m} + \frac{4(1-\delta)^2 \sigma^2}{n} = F \\
+			\frac{dF}{d \delta} = 0 = \frac{2 \delta \sigma ^2}{m} + \frac{8(1-\delta)\sigma^2}{n} \Rightarrow \delta = \frac{4m}{4m + n} $
+\section*{6.2}
+	\subsection*{20}
+		\subsubsection*{a)}
+		$L = \ln \left [\left(\!
+    \begin{array}{c}
+      n \\
+      x
+    \end{array}
+  \!\right)
+ p^x(1-p)^{n-x} \right ] = \ln \left(\!
+    \begin{array}{c}
+      n \\
+      x
+    \end{array}
+  \!\right) + x\ln p +\ln(1-p)(n-x) \\
+\frac{dL}{dp} = 0 = \frac{x}{p} - \frac{n-x}{1-p} \Rightarrow
+\hat{p} = \frac{x}{n}\\$
+Given $n=20, x=3: \hat{p}  = \frac{3}{20}$.
+\subsubsection*{b)}
+	Yes. $E(\hat{p}) = E \left ( \frac{x}{n} \right ) = \frac{E(X)}{n} = \frac{np}{p} = p.$
+\subsubsection*{c)}				
+	$(1-p)^5 = \left ( 1- \frac{3}{20} \right ) ^5 \approxeq .44371$
+	\subsection*{22}
+		\subsubsection*{a)}
+			$E(X) = \int_0^1 f(x; \theta) dx= \frac{\theta + 1}{\theta +2} \\
+			\overline{X} = \frac{\hat{\theta} + 1}{\hat{\theta} + 2} \Rightarrow \hat{\theta} = \frac{1}{1-\overline{X}} -2 = \frac{1}{1-.8} -2 = 3$
+		\subsubsection*{b)}
+			??	
+	 		
+%%%%%% End Content %%%%%%      
+\end{document}

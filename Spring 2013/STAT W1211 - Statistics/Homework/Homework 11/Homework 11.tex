@@ -1,0 +1,90 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{array}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{11}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{7.3}
+	\subsection*{32}
+		CI: $\overline{X} \pm t \frac{S}{\sqrt{n}} = 1584 \pm t_{19, .005} \frac{607}{\sqrt{20}} = 1584 \pm 2.861 \frac{607}{\sqrt{20}} = (1195.68, 1972.32)$
+	\subsection*{34}
+		\subsubsection*{a)}				
+			$8.48-1.771 \frac{.79}{\sqrt{14}} = 8.11.$ With 95\% confidence, the true mean of all joints is in the interval (8.11, $\infty$). For an infinite number of sample confidence intervals, 95\% will include the true mean.  A normal distribution is assumed.
+		\subsubsection*{b)}
+			$8.48 - 1.771 * .79 \sqrt{1+\frac{1}{14}} = 7.03$. If we calculate this bound for an infinite number of samples, 95\% will give the lower bound for future values of a joint.
+\section*{7 Supplement}
+	\subsection*{50}
+		$\overline{x} = \frac{229.764+233.502}{2} 231.63; t_{.025, 5-1} = 2.78\\
+		233.502 - 229.764 = 3.74; 2*2.78 \frac{s}{\sqrt{5}} =s \rightarrow s = \frac{\sqrt{5}*3.74}{2*2.78} = 1.51\\
+		t_{.005,4} = 4.604 \\
+		231.63 \pm 4.604 \frac{1.51}{\sqrt{5}} = 213.63 \pm 3.1$
+		
+	\subsection*{60}			 
+		$(z_Y+z_{\alpha - Y} \frac{s}{\sqrt{n}}) \rightarrow \min(z_Y+z_{\alpha - Y} \frac{s}{\sqrt{n}}) \rightarrow \min[\Phi^{-1}(1-Y) + \Phi^{-1} (1-\alpha + Y).$
+		\\ Setting the derivative equal to 0:
+		\\ $ \frac{1}{\Phi(1-Y)} = \frac{1}{\Phi(1-\alpha+Y)} \Rightarrow Y = \frac{\alpha}{2}$
+\section*{8.1}
+	\subsection*{2}
+		\subsubsection*{a)}
+			Yes.
+		\subsubsection*{b)}
+			No, because $H_0$ is not an equality claim.
+		\subsubsection*{c)}
+			No, because $H_a$ is the equality claim instead of $H_0$.
+		\subsubsection*{d)}
+			No. $\mu_1 -\mu_2$ should appear in $H_a$.
+		\subsubsection*{e)}
+			No because $S^2$ is a statistic and shouldn't be into a hypothesis.
+		\subsubsection*{f)}
+			No, both $H_0$ and $H_a$ can't be equality claims.
+		\subsubsection*{g)}
+			Yes
+		\subsubsection*{h)}
+			Yes
+	\subsection*{4}	
+		Versus $H_a: \mu < 5$. In this case, the type I error should be avoided at all costs whereas the type II error is not as serious.
+	\subsection*{6}
+		$H_0: \mu  = 40; H_a: \mu \not = 40. \mu \not = 40$ is interesting for the manufacturer in either direction. A type I error would be rejected a fuse where $\mu$ is actually 40. A type 2 error would be letting a fuse through where $\mu$ is 40.
+				
+				 
+	 		
+%%%%%% End Content %%%%%%      
+\end{document}

@@ -1,0 +1,282 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\renewcommand{\thesection}{Question \arabic{section}} %% Prefix section headers
+\renewcommand\thesubsection{(\alph{subsection})} %% Prefix/suffix subsections
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{10}
+\newcommand{\hwkAuthors}{Ben Drucker, Douglas Kessel, Ethan Kochav}
+\newcommand{\hwkDueDate}{\date{12/7/12}}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{\hwkDueDate}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section[1]{}
+	\subsection[a]{}
+		\begin{align*}
+			MRS_B = \frac{\frac{\partial U}{\partial x}}{\frac{\partial U}{\partial y}} & \Rightarrow MRS_B = \frac{3}{1} \\
+			MRS_S = \frac{\frac{\partial U}{\partial x}}{\frac{\partial U}{\partial y}} & \Rightarrow MRS_S = \frac{y}{x}
+		\end{align*}	
+		\includegraphics[height=2.5in]{Charts/1a}
+	\subsection[b]{}
+		Bruce will give up $y$ for $x$ and Sheila will give up $x$ for $y$. Sheila will be willing to trade $1 \leq x \leq 3$ for 1 $y$. 
+	\subsection[c]{}
+		Sheila gives up her entire allocation, making her new allocation (0,0). \\
+		\includegraphics[height=2in]{Charts/1c}
+	\subsection[d]{}
+		Sheila gives up 2 $x$ for 1 $y$ from Bruce. 
+		\\ \includegraphics[height=2in]{Charts/1d}
+	\subsection[e]{}
+		$\frac{y_s}{x_s} = 3 \Rightarrow y_s = 3x_s.$ \\
+		\includegraphics[height=2in]{Charts/1e}
+\section[2]{}
+	\subsection[a]{}
+		Yes, since both allocations are identical. 
+	\subsection[b]{}
+		$MRS_S = 3, MRS_B = 1$ at these allocations. They are not Pareto efficient.
+	\subsection[c]{}
+		Sheila. Bruce will trade $x$ for $y$. 
+	\subsection[d]{}
+		$1 \leq P \leq 3$.
+	\subsection[e]{}
+		Sheila trades 2 $y$ for 1 $x$. 
+		\begin{align*}
+			U_1^S = 3 \ln 10+ \ln 8 \approxeq 8.99 &> U_0^S = 4 \ln 9 \approxeq 8.79 \\
+			U_1^B = \ln 8 + \ln 11 \approxeq 4.48 &> U_0^B = 2\ln 9 \approxeq 4.39
+		\end{align*}
+	\subsection[f]{}
+		\includegraphics[height=2.5in]{Charts/2f}
+\section[3]{}
+	\subsection[a]{}
+		No. $MRS_S = \frac{y}{x}, MRS_B = \frac{4y}{x}.$ Plugging in endowments, $MRS_S = \frac{20}{12} \not = MRS_B = \frac{4*20}{10}$, therefore the allocation is not Pareto efficient. 
+	\subsection[b]{}
+		Bruce. Bruce will trade $y$ for $x$. $1 \leq P \leq \frac{6}{5}.$
+	\subsection[c]{}
+		No, it does not fall within $P$.
+			\begin{align*}
+				U_1^S = \ln 19 + \ln 15 \approxeq 5.65 &> U_0^S = \ln 20 + \ln 12 \approxeq 5.48 \\
+				U_1^B = 4 \ln 21 + \ln 7 \approxeq 14.12 &< U_0^B = 4 \ln 20 + \ln 10 \approxeq 14.29
+			\end{align*}
+	\subsection[d]{}
+		No. $\frac{3}{1} > \frac{6}{5}$ and therefore falls outside of $P$. 
+	\subsection[e]{}
+		\includegraphics[height=2.5in]{Charts/3e}
+\section[4]{}
+	\subsection[a]{}
+		Given a bundle $(x^a,y^a)$ for Melvin and $(x^b,y^b)$ for Martin and $p = \frac{p_x}{p_y}$:
+		\begin{align}
+			MRS = p \Rightarrow \frac{y^a}{y^b} = p \Rightarrow y^a = px^a\\
+			px^a +y^a = 10p+5\\
+			2y^a = 10p+5
+			MRS = p \Rightarrow \frac{2y^b}{x^b}=p \Rightarrow 2y^b = px^b\\
+			px^b + y^b = 15 p\\
+			3y^b =15p\\
+			x^a+x^b = 25\\
+			y^a+y^b = 5 \\
+			y^a+y^b=5p+\frac{5}{2} + 5p = 10p+\frac{5}{2} \Rightarrow p = \frac{1}{4}\\
+			(y^a, y^b) = \left ( \frac{15}{4}, \frac{5}{4}  \right )\\	
+			(x^a, x^b) = (15,10)	
+		\end{align}
+	\subsection[b]{}
+		\includegraphics[height=2.5in]{Charts/4b}
+	\subsection[c]{}
+		The competitive allocation, as expected, results in no surplus or shortage.
+\section[5]{}
+	\subsection[a]{}
+		$MRS_S = \frac{54}{35}, MRS_B = \frac{36}{5}$. The endowment point is not Pareto efficient. \\
+		\includegraphics[height=2in]{Charts/5a}
+	\subsection[b]{}
+		For Sheila: 
+		\setcounter{equation}{0}
+		\begin{align}
+			\frac{27y_s}{7x_s} &= \frac{p_x}{p_y}\\
+			p_x x_s + p_y y_s &= 20p_x+8p_y
+		\end{align}
+		For Bruce: 
+		\begin{align}
+			\frac{6y_b}{x_b} &= \frac{p_x}{p_y}\\
+			p_x x_b + p_y y_b &= 10p_x+12p_y
+		\end{align}
+	\subsection[c]{}
+		The price ratio of 1.3 does not fall between the $MRS$ values from \textit{(a)}.
+	\subsection[d]{}
+		Sheila:
+		\setcounter{equation}{0}
+		\begin{align}
+			20*13+8*10 = 340\\
+			12x_s+10y_s = 340\\
+			y_s = 34-1.3x_s\\
+			\frac{27y_s}{7x_s} = 1.3 \Rightarrow 9.1y_s = 27x_s \Rightarrow 27(34-1.3x_s) = 9.1x_s\\
+			x_s = 20.77, y_s=34-1.3*20.77 = 7
+		\end{align}
+		Sheila is a net supplier of chocolate. 
+		\\\\
+		Bruce: 	
+		\setcounter{equation}{0}
+		\begin{align}
+			10*13+12*10 = 250\\
+			y_b = 25-1.3x_b\\
+			\frac{6y_b}{x_b} = 1.3 \Rightarrow 6y_b = 1.3x_b \Rightarrow 6(25-1.3x_b)=1.3x_b\\
+			x_b = 16.48, y_b=25-1.3*16.48 = 3.58
+		\end{align}
+		Bruce is a net supplier of chocolate.
+	\subsection[e]{}
+		There is excess supply in the market for chocolate and excess demand in the market for soda. \\
+		\includegraphics[height=2.5in]{Charts/5e}\\
+		The slope of the budget line $BL$ is $\frac{p_x}{p_y}$. 
+	\subsection[f]{}
+		Sheila: 
+		$$4x_s+y_b = 20*3+8*1, \frac{27y_s}{7x_s}=3 \Rightarrow x_s = 18, y_s = 14$$
+		Bruce:
+		$$3x_b+y_b=10*3+12*1, \frac{6y_b}{x_b} = 3 \Rightarrow x_b = 12, y_b = 6$$
+		$x_s+x_b = 30, y_s+y_b  = 20.$ The market clears. 
+	\subsection[g]{}
+		\includegraphics[height=2.5in]{Charts/5g}
+\section[6]{}
+	\subsection[a]{}
+		\begin{align}
+		\setcounter{equation}{0}
+			MR=p \left ( 1+ \frac{1}{\epsilon^D} \right ) \\
+			MR=MC=0, p=250\\
+			250 \left ( 1+ \frac{1}{\epsilon^D} \right ) = 0 \Rightarrow \epsilon^D = -1
+		\end{align}
+	\subsection[b]{}
+		\includegraphics[height=2.5in]{Charts/6b}
+		\\ Lively bears the full tax burden. 
+\section[7]{}
+	\subsection[a]{}
+		$\frac{\partial \Pi}{\partial Q} = R'(Q)-C'(Q) -t =0.$
+	\subsection[b]{}
+		$$\frac{d^2R}{dQ^2}\frac{dQ}{dt}-\frac{d^2C}{dQ^2}\frac{dQ}{dt}-1=0$$
+		$$\frac{dQ}{dt} = \frac{1}{\frac{d^2R}{dQ^2}-\frac{d^2C}{dQ^2}}$$
+	\subsection[c]{}
+		\begin{align}
+			\setcounter{equation}{0}
+			p(Q) = a-bQ \\
+			MR(Q) = a-2bQ \\
+			a-2bQ-c-t=0\\
+			Q = \frac{a-c-t}{2}\\
+			P(Q) = a-bQ = a-b\left ( \frac{a-c-t}{2b} \right ) = a - \frac{a-c-t}{2} = \frac{a+c+t}{2} \\
+			\frac{dP}{dt} = \frac{1}{2}
+		\end{align}				
+		In the perfectly competitive case, the burden of the tax depends on the relative elasticities of supply and demand.\\
+		\includegraphics[height=2.5in]{Charts/7c}
+	\subsection[d]{}
+		\begin{align}
+		\setcounter{equation}{0}
+			P(Q) = Q^{\frac{1}{\epsilon}} \\
+			R(Q) = pQ = Q^{1+\frac{1}{\epsilon}} \\
+			MR = \left ( 1+ \frac{1}{\epsilon} \right ) Q^{\frac{1}{\epsilon}}\\
+			MR = MC \Rightarrow  \left ( 1+ \frac{1}{\epsilon} \right ) Q^{\frac{1}{\epsilon}}\ = c+t \\
+			Q^{\frac{1}{\epsilon}} = \frac{c+t}{1+\frac{1}{\epsilon}} \\
+			Q = \left (  \frac{c+t}{1+\frac{1}{\epsilon}}  \right ) ^ \epsilon \\
+			P(Q) = \frac{c+t}{1+\frac{1}{\epsilon}} \\
+			\frac{dP}{dt} = \frac{1}{1+\frac{1}{\epsilon}}; \epsilon < -1. \\
+			\frac{dP}{dt} > 1
+		\end{align}
+		A tax burden exceeding 100\% of $t$ was not possible in a competitive market.
+\section[8]{}
+	\subsection[a]{}
+		\begin{align*}
+			\min[16L+2K]\textrm{ s.t. }5L^\frac{1}{5} K^\frac{4}{5} = \overline{Q}\\
+			MRTS = \frac{\frac{\partial Q}{\partial L}}{\frac{\partial Q}{\partial K}} = \frac{K}{4L}=\frac{W}{R} = 8 \Rightarrow K = 32L\\
+			5L^\frac{1}{5}(32L)^\frac{4}{5} = \overline{Q} = 80L \\
+			L = \frac{\overline{Q}}{80}, K=\frac{32\overline{Q}}{80} = \frac{2\overline{Q}}{5} \\
+			VC = 16L+2K = \frac{16\overline{Q}}{80} + \frac{4\overline{Q}}{5} = \overline{Q}
+		\end{align*}
+	\subsection[b]{}
+		$AC = \frac{4000}{Q}+1; MC = 1.$ The cost curves exhibit scale economies for all values of $Q$.\\
+		\includegraphics[height=2.5in]{Charts/8b}
+	\subsection[c]{}
+		\begin{align*}
+			P = \frac{510-Q}{10} \\
+			MR = 51- \frac{Q}{5} = MC = 1\\
+			Q = 250\\
+			P= \frac{510-250}{10}=26
+		\end{align*}
+	
+	\subsection[d]{}
+		\includegraphics[height=3in]{Charts/8d}\\
+		The dark shaded region is $\Pi$. The entire shaded region is $PS$. 
+	\subsection[e]{}
+		The difference between $PS$ and $\Pi$ is fixed cost. 
+	\subsection[f]{}
+		\begin{align*}
+			P=AC\\
+			\frac{4000}{Q}+1 = 51- \frac{Q}{10}\\
+			Q = {100,400}\\
+			P(Q=100) = 41. P(Q=400) = 11.
+		\end{align*}
+		The regulator should set $P=11.$ At this price, $MC=AC$, so Horizon is willing to produce $Q=400$.
+	\subsection[g]{}
+		\includegraphics[height=2.5in]{Charts/8g}
+\section[9]{}
+	\subsection[a]{}
+		\begin{align*}
+			MR = 0 = 9.8-.0004Q\\
+			Q = 24,500 > 15,000. Q = 15,000. \\
+			P = 9.8-.0002*15000 = 6.8 \\
+			MR = 9.8 - .0004*15000 = 3.8\\
+			MR = P\left ( 1+ \frac{1}{\epsilon^D} \right ) \Rightarrow \epsilon^D = -2.27\\
+			\Pi = PQ-5Q-25000 = 6.8*15000-5*15000-25000=2,000			
+		\end{align*}	
+	\subsection[b]{}
+		\begin{align*}
+			MR = 9.8-.0004Q = MC = 5\\
+			Q = 12,000\\
+			P=9.8-.0002*12000=7.4\\
+			\Pi = 7.4*12000-5*12000-25000=3800
+		\end{align*}
+	\subsection[c]{}
+		\begin{align*}
+			MR_1 = 9.8-.0004Q_1\\
+			MR_2 = 7-.0002Q_2\\
+			MR_1 = MR_2 = MC \Rightarrow Q_1 = 12,000, Q_2 = 10,000\\
+			Q_t =22,000 > 15,000 \\
+			Q_1 + Q_2 = Q_t = 15,000 \Rightarrow Q_2 = 15,000 - Q_1 \\
+			9.8-.0004Q_1 = 7-.0002 \Rightarrow Q_1 =9667 \Rightarrow Q_2 = 5333\\
+			9.8-.0002*9667 = P_1 = 7.87\\
+			7-.0001*5333 = P_2 = 6.47\\
+			\Pi = 7.87*5333+6.47*5333-5*15000-25000 = 10583.8				
+		\end{align*}								 			
+				
+		
+				 	
+							
+															
+				
+%%%%%% End Content %%%%%%      
+\end{document}

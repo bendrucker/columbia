@@ -1,0 +1,133 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{3}
+\newcommand{\hwkAuthors}{Ben Drucker}
+\newcommand{\hwkDueDate}{\date{12/7/12}}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{\hwkDueDate}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{2: Supplementary Exercises}
+	\subsection*{94)}
+		$\{T,R,E\} = $ \{Transmitter, Relay, Receiver\}  $ \in N$ = Nodes \\
+		$R^n$: relay $n$ \\
+		$N_i, i \in \{1,2\}$: value transmitted at node, or received in the case of $E$. 				
+		\subsubsection*{a)}
+			$P(R^2_1 \cap R^2_1 \cap R^3_1 | T_1) = .8^3 = .512$
+		\subsubsection*{b)}
+			$P(R_1 | T_1) = 3*(.2^2*.8)+.8^3=.608$
+		\subsubsection*{c)}
+			\begin{align*}
+				P(T_1 | R_1) &= \frac{P(T_1)P(R_1|T_1)}{P(T_0)P(R_1|T_0)+P(T_1)P(R_1|T_1)} \\
+				&= \frac{.7*.8^3}{.3(1-.8^3)+.7*.8^3} \\
+				& \approxeq 0.71
+			\end{align*}
+	\subsection*{100)}
+		$D$ denotes a disease carrier. $T$ denotes a positive test. \\
+		$P(D) = .01; P(T|D) = .9; P(T|D')= .05.$
+		\subsubsection*{a)}
+			\begin{align*}
+				P(TT \cup T'T') &= P(TT|D)P(D) + P(TT|D')P(D')+P(T'T'|D)P(D) + P(T'T'|D')P(D') \\
+				&= .9^2*.01+.05^2*.99 + .1^2*.01 + .95^2 * .99 \\
+				&= .90415
+			\end{align*}
+		\subsubsection*{b)}
+			\begin{align*}
+				P(D|TT) &= \frac{P(TT|D)P(D)}{P(TT)} \\
+				&= \frac{.9^2*.01}{.9^2*.01 + .05^2*.99} \\	
+				& \approxeq .766
+			\end{align*}
+\section*{3.1}
+	\subsection*{5)}
+		No. Roll a die until two consecutive rolls are the same. Let $X$ equal the value of the roll. The sample space is infinitely large but $X$ can only take on 6 possible values. 
+	\subsection*{8)}
+		\begin{itemize}
+			\item $Y=3$: \{SSS\}
+			\item $Y=4$: \{FSSS\}
+			\item $Y=5$: \{SFSSS, FFSSS\}
+			\item $Y=6$: \{SSFSSS, SFFSSS, FFFSSS, FSFSSS\}
+			\item $Y=7$: \{FFFFSSS,FFSFSSS, FSSFSSS, SSFFSSS, SFSFSSS, SFFFSSS, FSFFSSS\}
+		\end{itemize}
+\section*{3.2}
+	\subsection*{14)}
+		\subsubsection*{a)}				
+			$ 1= k(1+2+3+4+5) = 15k \Rightarrow k = \frac{1}{15}$
+		\subsubsection*{b)}
+			$P(y=1 \cup y=2 \cup y=3) = \frac{1+2+3}{15} = \frac{2}{5}$
+		\subsubsection*{c)}
+			$P(y=2 \cup y=3 \cup y=4) = \frac{2+3+4}{15} = \frac{3}{5}$
+		\subsubsection*{d)}
+			$\sum_{y=1}^{5} \frac{y^2}{50} = \frac{1+ 2^2 + 3^2 + 4^2 + 5^2}{50} = \frac{55}{50} \not = 1$ \\
+			$ \therefore p(y)$ is not the pmf of $Y$.
+	\subsection*{16)}
+		\subsubsection*{a)}
+			\begin{itemize}
+				\item $P(X=0) = .75^4$
+				\item $P(X=1) = .75^3*.25 * 4$
+				\item $P(X=2) = .75^2 * .25^2 *6 $
+				\item $P(X=3) = .75 * .25^3 * 2$
+				\item $P(X=4) = .25^4$ 
+			\end{itemize}
+		\subsubsection*{b)}
+			\includegraphics[height=2in]{16b}
+		\subsubsection*{c)}
+			$X=1$
+		\subsubsection*{d)}
+			$P(X=2 \cup X=3 \cup X=4) = .75^2 * .25^2 *6 +  .75 * .25^3 * 2 +  .25^4 = \frac{61}{256}$
+	\subsection*{28)}
+		Given $x_1 < x_2$:
+		\begin{align}
+			F(x_2) &= P(X \leq x_2)\\
+			&= P( X \leq x_2 \cup x_1 < X \leq x_2) \\
+			&= P( X \leq x_2 ) + P( x_1 < X \leq x_2) \\
+			&= F(x_1) + P( x_1 < X \leq x_2)\\
+			& \geq F(x_1)
+		\end{align}
+		$F(x_1) = F(x_2) \iff P(x_1 < X \leq x_2) =0.$
+
+\section*{3.3)}
+	\subsection*{36)}
+		$E(X) = -.1(1000-500) - -.08(5000-500) - .02(10000-500) = -600.$ A premium of \$700 $(100--600)$ is required for an expected profit of \$100. 
+\section*{3.4)}
+	\subsection*{60)}
+		$E(X) = .6*1 + .4*2.5)*25 = 40$. 
+			
+		
+				
+%%%%%% End Content %%%%%%      
+\end{document}

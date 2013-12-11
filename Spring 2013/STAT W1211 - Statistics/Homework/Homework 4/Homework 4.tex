@@ -1,0 +1,140 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{4}
+\newcommand{\hwkAuthors}{Ben Drucker}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section*{3.3}
+	\subsection*{30)}
+		\subsubsection*{a)}
+			$E(Y) = 0 * .6 + 1 * .25 + 2 * .1 + 3 * .05 = .6$
+		\subsubsection*{b)}
+			$ 100 *0^2 * .6 + 100*1^2 * .25 + 100*2^2 * .1 +100 *  3^2 * .05 = 110$
+	\subsection*{38)}
+		$$ h(E(X)) = \frac{1}{\frac{1+2+3+4+5+6}{6}} = \frac{2}{7} = 0.\overline{285714}$$
+		$$E(h(X)) = \frac{1}{6} \left (1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} \right ) = .408\overline{3}$$
+		Gambling has a higher expected value. 
+\section*{3.4}
+	\subsection*{46)}
+		\subsubsection*{a)}
+			$ b(3; 8, .35) = P(X=3) = \frac{8!}{3!(8-3)!}*.35^3(1-.35)^{8-3} \approxeq 0.2785857790625$
+		\subsubsection*{b)}
+			$b(5; 8,.6) = P(X=5) = \frac{8!}{5!(8-5)!}*.6^5(1-.6)^{8-5} \approxeq 0.27869184$
+		\subsubsection*{c)}
+			$ P(3 \leq X \leq 5) = \sum_{x=3}^5 \frac{7!}{x!(7-x)!}*.6^x(1-.6)^{7-x} \approxeq .7451$	
+		\subsubsection*{d)}
+			$ P(X \geq 1) = 1-P(X=0) = 1-\frac{9!}{0!(9-0)!}(.1)^0(1-.1)^9 \approxeq .6126  $
+\section*{4.1)}
+	\subsection*{2)}
+		\subsubsection*{a)}
+			$P(X<0) = \frac{0-(-5)}{5-(-5)} = \frac{1}{2} $
+		\subsubsection*{b)}
+			$P(-2.5 < X < 2.5) = \frac{2.5-(-2.5)}{5-(-5)} = \frac{1}{2}$
+		\subsubsection*{c)}
+			$P(-2 \leq X \leq 3) = \frac{3-(-2)}{5-(-5)} = \frac{1}{2}$
+		\subsubsection*{d)}
+			$\int_k^{k+4}\frac{1}{10}dx = \frac{(k+4)-k}{10} = \frac{4}{10} $
+	\subsection{6)}
+		\subsubsection*{a)}
+			\includegraphics[height=2in]{4-1--6a.pdf}
+		\subsubsection*{b)}
+			$$\int_2^4 k[1-(x-3)^2]dx = k \left [ x-\frac{(x-3)^3}{3} \right ]_2^4 = k \left ( 4-\frac{1}{3} -2-\frac{1}{3} \right ) = \frac{4}{3}k=1 \Rightarrow k = \frac{3}{4} $$
+		\subsubsection*{c)}
+			$P(X \geq 3) = \int_3^4 \frac{3}{4}[1-(x-3)^2]dx = \frac{1}{2} $
+		\subsubsection*{d)}
+			$P(2.75 \geq X \geq 3.25) = \int_{2.75}^{3.25} \frac{3}{4}[1-(x-3)^2]dx \approxeq 0.367188 $
+		\subsubsection*{e)}
+			$P(2 \leq X < 2.5 \cup 3.5 \leq X < 4) = \int_{0}^{2.5} \frac{3}{4}[1-(x-3)^2]dx + \int_{3.5}^{4} \frac{3}{4}[1-(x-3)^2]dx = 0.3125 $
+\section*{4.2)}
+	\subsection*{18)}
+		\subsubsection*{a)}
+			$P(Y=.5) = \frac{.5}{2} = .25$
+		\subsubsection*{b)}
+			For $|X|<.5$:\\
+			$$F_Y(y) = P(Y=y) = P(Y=-.5)+P(-.5 \leq X < 1) = \frac{1}{4}+ \int_{-.5}^y \frac{1}{2}dy = \frac{1}{4} + \frac{y+.5}{2} = \frac{y+1}{2} $$
+			\begin{equation*}
+				F_Y(y) =
+				\begin{cases}
+					\frac{1}{4} &\text{if $Y=-.5$} \\
+					\frac{y+1}{2} &\text{if $|Y|<.5$} \\
+					1 &\text{if $Y=.5$}
+				\end{cases}
+			\end{equation*}		
+			\includegraphics[height=2in]{4-2--18b}
+	\subsection*{26)}
+		\subsubsection*{a)}
+			$\int_0^\infty k \left ( 1+ \frac{x}{2.5} \right )^{-7}dx=1 \Rightarrow \frac{5}{12}k=1 \Rightarrow k =\frac{12}{5}$
+		\subsubsection*{b)}
+			\includegraphics[height=2.5in]{4-2--26b}
+		\subsubsection*{c)}
+			$E(X) = \int_0^\infty xf(x)dx = \int_0^\infty \frac{12}{5}x \left ( 1 + \frac{x}{2.5} \right )^{-7}dx=.5 \\
+			E(X^2) = \int_0^\infty x^2f(x)dx = \int_0^\infty \frac{12}{5}x^2 \left ( 1 + \frac{x}{2.5} \right )^{-7}dx = .625 \\
+			SD(X) = \sqrt{E(X^2)-E(X)^2}= \sqrt{.375} \approxeq .6124 $
+		\subsubsection*{d)}
+			$$
+				Y = 
+				\begin{cases}
+					0, &0 \leq x \leq .5 \\ 
+					.8(X-.5), &.6 \leq x \leq 2.5 \\
+					0, &\text{Elsewhere}
+				\end{cases}
+			$$
+			\begin{align*}
+				E(Y) &= E[.8(X-.5)]\\
+				&= \int_{.6}^{2.5} [.8(x-.5)]f(x)dx \\
+				&= \int_{.6}^{2.5} [.8(x-.5)] \frac{12}{5} \left (1 + \frac{x}{2.5} \right )^{-7} dx \\
+				& \approxeq .121\\
+				E(Y) &= \$121
+			\end{align*}
+\section*{4.3}
+	\subsection*{32)}
+		\subsubsection*{a)}
+			$P(X \leq 15) = .5$
+		\subsubsection*{b)}
+			$P(X \leq 17.5) = P(Z < \frac{17.5-15}{1.25} \approxeq .9772 $
+		\subsubsection*{c)}
+			$P(X \geq 10) = 1 - P(X \leq 10) = 1- P(Z < \frac{10-15}{1.25} \approxeq 1$
+		\subsubsection*{d)}
+			$P(14 \leq X \leq 18) = P(\frac{14-15}{1.25} < Z < \frac{18-15}{1.25} \approxeq .9918 - .2119 = .7799$
+		\subsubsection*{e)}
+			$P(|X-15| \leq 3) = P(12 \leq X \leq 18) = P(\frac{12-15}{1.25} < Z < \frac{18-15}{1.25}) \approxeq .9918 - .0082 = .9836$
+			
+%%%%%% End Content %%%%%%      
+\end{document}

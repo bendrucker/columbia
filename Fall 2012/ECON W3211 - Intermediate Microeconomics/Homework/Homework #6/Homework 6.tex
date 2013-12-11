@@ -1,0 +1,248 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\renewcommand{\thesection}{Question \arabic{section}} %% Prefix section headers
+\renewcommand\thesubsection{(\alph{subsection})} %% Prefix/suffix subsections
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{6}
+\newcommand{\hwkAuthors}{Ben Drucker, Douglas Kessel, Ethan Kochav}
+\newcommand{\hwkDueDate}{\date{10/19/12}}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{\hwkDueDate}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section[1]{}
+	\begin{align}
+		\max_C [U_E] &= (1-.1)\sqrt{10,000-rC}+.1\sqrt{10,000-7,500+C(1-r)} \\
+		&= .9 \sqrt{10,000-rC}+.1\sqrt{2,500+C(1-r)} \\
+		\frac{\partial U_E}{\partial C} &= -\frac{\left(\frac{1}{2}\right)(.9)(r)}{\sqrt{10,000-rC}}
+		+ \frac{\left(\frac{1}{2}\right)(.1)(1-r)}{\sqrt{2,500+C(1-r)}} = 0
+	\end{align}
+	Solving for $C(r)$:
+	$$ C(r) = \frac{2,500(77 r^2+8 r-4)}{r (80 r^2-79 r-1)} $$
+
+\section[2]{}
+	\subsection[a]{}
+		For men, $Cost = .25*7,500 = 1,875$. They will purchase this policy because the cost is below their \$2,343.75 maximum acceptable cost.
+		For women, $Cost = .19 * 3,60 = 684$. They will purchase this policy because the cost is below their \$745.50 maximum acceptable cost. 
+	\subsection[b]{}
+		\begin{align*}
+			V_E &= .75*15,000+.25*7,500 = 13,125 \\
+			CE &= 15,000 - 2,343.75 = 12,656.25 \\
+			RP &= V_E - CE = 468.75
+		\end{align*}
+		\includegraphics[height=2in]{Charts/2b}
+		 \\Graph is not to scale. Proportions altered for clarity. 
+	\subsection[c]{}
+		\begin{align*}
+			V_E &= .81*15,000 + .19*11,400 = 14,316 \\
+			CE &= 15,000	 - 745.5 = 14,254.5 \\
+			RP &= V_E - CE = 61.5
+		\end{align*}
+		\includegraphics[height=2in]{Charts/2c}
+		 \\Graph is not to scale. Proportions altered for clarity. 
+	\subsection[d]{}
+		For the insurance company:
+		\begin{align*}
+			I_E &= \frac{1}{2} (-7,500*.25+7,500*r)+\frac{1}{2}(-3,600*.19+3,600*r) \\
+			&= 5,550r - 1279.5
+		\end{align*}
+		For women: 
+		\begin{align*}
+			3,600r & \leq 745.5 \\
+			r &\leq 0.20708\bar{3}
+		\end{align*}
+		For men: 
+		\begin{align*}
+			7,500r &  \leq 2,343.75 \\
+			r &\leq \frac{5}{16}
+		\end{align*}
+		Treating men and women as the rate-setters and inputting their maximum acceptable values of $r$ into the expected income function for the insurance company:
+		\begin{align*}
+			I_{E_{women}} &\leq -140.541\bar{6} \\
+			I_{E_{men}} &\leq 439.25
+		\end{align*}
+	\subsection[e]{}	
+		Only men will be covered. Even if the insurance company sets $r$ such that women pay their maximum acceptable cost, $I_E$ will be negative. The company will not offer insurance to women under any circumstances. They can only receive positive $I_E$ when the rate is determined by what is acceptable to men. They will set $r=.25$ such that $rC=1,875$, the cost of providing full fair insurance. 
+		
+\section[3]{}
+	\subsection[a]{}
+		$ \Pi_H = 3,600; \Pi_L = 900; \Pi_E = 2,250.$
+	\subsection[b]{}
+		$CE = e^{U_E} = e^{\frac{1}{2}(\ln 3600+\ln 900)}=1,800; RP = V_E - CE = 450 $
+	\subsection[c]{}
+		\includegraphics[height=2in]{Charts/3c}
+		 \\Graph is not to scale. Proportions altered for clarity. 
+	\subsection[d]{}
+		Helen is receiving insurance. Under the scheme, she transfers some of her risk to Gene, much the way a risk averse individual would to an insurance provider. 
+	\subsection[e]{}
+		$W_E = \frac{1}{2}(.2(1900+4600)+700)) = 1000; \Pi_E = 3,250.$
+	\subsection[f]{}
+		\includegraphics[height=4in]{Charts/3f}
+		 \\Graph is not to scale. Proportions altered for clarity. \\
+		$U_E = \frac{1}{2}\ln[4,600-(350+.2*4,600)] + \frac{1}{2}\ln[1900-(350+.2*1900)] = 7.591\bar{9}. \\
+		U_{E_{previous}} \approxeq 7.5.$ \\
+		Helen's utility is greater than under the old scheme so she will be better off. 
+	\subsection[g]{}
+		No. Helen has transferred some of her risk to Gene. He is risk averse and so the same expected income and increased risk is worse for him. 
+	\subsection[h]{}
+		$ \Pi = \frac{1}{2}[(4,600-W_H)+(1900-W_L)] $
+	\subsection[i]{}
+		$ (W_L, W_H) = (100,2800) $ \\
+		This brings Helen to her certainty equivalent of 1,800. 
+	\subsection[j]{}
+		$ W_E = \frac{1}{2}(100+2800) = 1450 $
+\section[4]{}
+	\subsection[a]{}
+		$W_E = .9*202,500+.1*90,000=191,250; U_E =.9\sqrt{202,500}+.1\sqrt{90,000}=435.$
+	\subsection[b]{}
+		$CE = U^{-1}(U_E) = 435^2 = 189,225$
+	\subsection[c]{}
+		$RP = W_E - CE = 2,025$
+	\subsection[d]{}
+		$ W_0-CE = 202,500 - 189,225 = 13,275	$
+	\subsection[e]{}
+		\includegraphics[height=3in]{Charts/4e}
+		 \\Graph is not to scale. Proportions altered for clarity. 
+	\subsection[f]{}
+		Fire: $W = 90,000+C-rC$	\\
+		No Fire: $ W = 202,500 - rC $ \\
+		$ U_E = .1 \sqrt{90,000+C-rC} + .9 \sqrt{202,500 - rC} $
+	\subsection[g]{}
+		$$
+			\frac{\partial U}{\partial C} = \frac{.05(1-r)}{\sqrt{C-rC+90,000}} - \frac{.45r}{\sqrt{202,500-Cr}} = 0
+		$$
+	\subsection[h]{}
+		$.9(202,500 - r) + .1(90,000+1-r)=191,250 \\
+		r= .1$
+	\subsection[i]{}
+		\begin{align*}
+			C(r)&=\frac{202500 \left(35 r^2+2 r-1\right)}{r \left(80 r^2-79 r-1\right)}	 \\
+			C(.1) &= 112,500
+		\end{align*}
+	\subsection[j]{}
+		\setcounter{equation}{0}
+		\begin{align}
+			\frac{\partial U}{\partial C} &= \frac{.05(1-r)}{\sqrt{C-rC+87,500}} - \frac{.45r}{\sqrt{200,000-Cr}} = 0 \\
+			C(r) &=\frac{12500 \left(551 r^2+32 r-16\right)}{r \left(80 r^2-79 r-1\right)} \\
+			C(.1) &= 112,500
+		\end{align}
+		The amount of fair insurance she purchases is unchanged. 
+	\subsection[k]{}
+		\begin{align}
+		\setcounter{equation}{0}
+			\frac{\partial U}{\partial C} &= \frac{.05(1-r)}{\sqrt{C-rC+90,000}} - \frac{.45r}{\sqrt{200,000-Cr}} = 0 \\
+			C(r) &=\frac{10000 \left(709 r^2+40 r-20\right)}{r \left(80 r^2-79 r-1\right)} \\
+			C(.1) &= 110,000
+		\end{align}
+		Maria reduces the coverage she purchases. 
+\section[5]{}
+	\subsection[a]{}
+		$ P = .2(C-Cr)-.8Cr; $ For $P=0, r=.2.$
+	\subsection[b]{}
+		$ W_E = \frac{1}{2}(120,000+30,000) = 75,000; U_E = \frac{1}{2} (\ln 120,000 + \ln 30,000)$
+	\subsection[c]{}
+		$ CE = e^{\frac{1}{2} (\ln 120,000 + \ln 30,000)} = 60,000; RP = W_E - CE = 15,000 $
+	\subsection[d]{}
+		$ {Cr}_{max} = W_0 - CE  = 60,000 $
+	\subsection[e]{}
+		\includegraphics[height=3in]{Charts/5e}
+		 \\Graph is not to scale. Proportions altered for clarity. 
+	\subsection[f]{}
+		Yes. $ 90,000*.2 = 18,000 < {Cr}_{max} = 60,000.$
+	\subsection[g]{}
+		$ U_E = .9 \ln (120,000 - .2C) + .1 \ln (30,000 + C - .2C) $
+	\subsection[h]{}
+		$$
+			\frac{\partial U}{\partial C} = -\frac{.18}{120,000 - .2C} + \frac{.08}{30,000 + .8C} = 0
+		$$
+	\subsection[i]{}
+		$$
+			\frac{\partial U}{\partial C} \bigg |_{C=90,000} = -\frac{.18}{120,000 - .2*90,000} + \frac{.08}{30,000 + .8*90,000} = -\frac{.18}{102,000}+\frac{.08}{102,000} < 0
+		$$
+	\subsection[j]{}
+		$ C = 26,250 $
+	\subsection[k]{}
+		Both will purchase a policy. For Helios, $r=.1$ represents his fair price and he is risk averse. \$30,000 is also more than he purchased from Lloyd's. \\
+		We know that Luna will purchase the full \$30,000 from Greenwich if she does choose to buy their policy since the $ r=.1$ is well below her fair price. We can find her expected utility: 
+		$$
+			U_E = \frac{1}{2}[\ln (120,000 - 30,000) + \ln (30,000 + 30,000 - .1*30,000)] \approxeq 11.18
+		$$
+		Her utility under Lloyd's was: 
+		$$
+			U_E = \ln(120,000 - 90,000 * .2) \approxeq 11.53
+		$$
+		Thus she will choose the Lloyd's policy. 
+	\subsection[l]{}
+		No. Previously, Lloyd's made money on low risk customers and lost money on high risk customers. Now that all low risk customers have moved to the Greenwich policy, Lloyd's will lose money by offering the policy. 
+		
+
+\section[6]{}
+	\subsection[a]{}
+		$ VC = Q^2; TC = VC + 64 = Q^2+64. $ \\
+		\includegraphics[height=2in]{Charts/6a}
+		 \\Graph is not to scale. Proportions altered for clarity. 	
+	\subsection[b]{}
+		$ MC = 2Q; ATC = \frac{Q^2+64}{Q} $ \\
+		$ \frac{\partial ATC}{\partial Q} = 1- \frac{64}{Q^2} = 0; Q_{opt} = 8.$ \\
+		\includegraphics[height=2in]{Charts/6b}
+		 \\Graph is not to scale. Proportions altered for clarity. 
+	\subsection[c]{}
+		$ R = 20Q; MR = 20 $
+	\subsection[d]{}
+		\begin{align*}
+			MC &= MR \\
+			2Q &= 20 \\
+			Q & = 10
+		\end{align*}	
+		
+\section[7]{}
+	\renewcommand{\theenumi}{\alph{enumi})}
+	\renewcommand{\labelenumi}{\theenumi}
+	
+	\begin{enumerate}
+		\item Yes. An increase in input costs increases $MC$. $MC$ now intersects $MR$ at a smaller $Q$.
+		\item No, there is no effect on output. Although $TC$ is changed, $MC$ is unchanged. 
+		\item No, there is no effect on output. Because $\Pi  = 0$ at $MR=MC$, this tax does not affect the firm. 
+		\item Yes. The slope of $MC$ increases and so $Q$ is reduced. 
+		\item No, there is no effect on output. A lump-sum grant does not affect $MC$ or $MR$. 
+		\item Yes. This reduces the firms $MC$, increasing $Q$. 
+		\item Yes. This reduces the firms $MC$, increasing $Q$. 
+	\end{enumerate}			
+													
+
+%%%%%% End Content %%%%%%      
+\end{document}

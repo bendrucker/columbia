@@ -1,0 +1,221 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\renewcommand{\thesection}{Question \arabic{section}} %% Prefix section headers
+\renewcommand\thesubsection{(\alph{subsection})} %% Prefix/suffix subsections
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{8}
+\newcommand{\hwkAuthors}{Ben Drucker, Douglas Kessel, Ethan Kochav}
+\newcommand{\hwkDueDate}{\date{11/17/12}}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{\hwkDueDate}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section[1]{}
+	\subsection[a]{}
+		\begin{align}
+			MC_1 = .2Q_1 \\
+			AC_1 = .1Q_1+\frac{250}{Q_1}\\
+			MC_1 = AC_1 \Rightarrow Q_1^*=50 \\
+			Q_{S_1} = 5P
+		\end{align}
+		\includegraphics[height=1.5in]{Charts/1a1}
+		\begin{align}
+			\setcounter{equation}{0}
+			MC_j=.2Q_j+5\\
+			AC_j=.1*Q_j+5+\frac{250}{Q_j}\\
+			MC_j = AC_j \Rightarrow Q_j = 50\\
+			Q_j=5P-25\\
+		\end{align}	
+		\includegraphics[height=1.5in]{Charts/1a2}
+	\subsection[b]{}
+		\begin{align}
+		\setcounter{equation}{0}
+			Q_s=5P+5P-25+5p-25=15P-50\\
+			Q_s=15P-50=Q_d=550-15P\\
+			P=20\\
+			Q_1=5*20=100\\Q_j=5*20-25=75\\
+		\end{align}	
+		All of these firms are earning profits in the short run as they are selling at a price of \$20, which is above the price of their optimal size.
+	\subsection[c]{}
+		\begin{align*}
+			P_{LR}=15\\
+			Q_s=15*(15)-50=175\\
+			Q_1=5*15=75\\
+			\pi_1=75*15-.1*75^2-250=312.5\\
+			\pi_j=0
+		\end{align*}
+		\includegraphics[height=2in]{Charts/1c}	
+\section[2]{}
+	\subsection[a]{}
+		The market clearing price is \$6. $TS = 8+6+4+2=20$. 
+	\subsection[b]{}
+		Howard (highest cost) is matched with Alice (highest reservation price), Glenn (second-highest cost) is matched with Blanche (second-highest reservation price) and so on. The total surplus ($TS$) is now 8. 
+	\subsection[c]{}
+		Yes. Any buyers whose reservation prices were exceeded by the market-clearing price of \$6 now have a surplus of 1 instead of 0. 	
+\section[3]{}
+	\subsection[a]{}
+		\begin{align*}
+			TC=.1Q^2+10Q+16000\\
+			MC=.2Q+10\\
+			AC=.1Q+10+\frac{16000}{Q}\\
+			MC = AC \Rightarrow Q^*=400 \Rightarrow P^* = 90 \\
+		\end{align*}
+	\subsection[b]{}
+		\includegraphics[height=2in]{Charts/3b}
+	\subsection[c]{}
+		$P_{LR}=.2*400+10=90.$
+	\subsection[d]{}
+		\begin{align*}
+			MC=.2Q\\
+			AC=.1Q+\frac{16000}{Q}\\
+			MC = AC \Rightarrow Q^*=400 \Rightarrow P^*=80
+		\end{align*}
+		\includegraphics[height=2.5in]{Charts/3d}
+	\subsection[e]{}
+		$Q=5P=5*90=450$
+	\subsection[f]{}
+		$\Pi=450*90-.1*450^2-16000=4250.$ \\
+		\includegraphics[height=2.5in]{Charts/3f}
+\section[4]{}
+	\subsection[a]{}
+		\begin{align*}
+			AC=.25Q+1+\frac{100}{Q}\\
+			MC=.5Q+1\\
+			MC = AC \Rightarrow Q^*=20
+		\end{align*}
+		\includegraphics[height=2in]{Charts/4a}
+	\subsection[b]{}
+		$P=.5Q+1 \Rightarrow Q_s=2P-2.$
+	\subsection[c]{}
+		$P^*=.5*20+1=11\\
+		Q_d=1150-50*11=600\\
+		n=\frac{600}{20}=30$
+	\subsection[d]{}
+		\includegraphics[height=2.5in]{Charts/4d}
+	\subsection[e]{}
+		$P_d$ represents the price paid by consumers. $P_s$ represents the price received by suppliers. The shaded region represents the loss in market surplus. \\
+		\includegraphics[height=3in]{Charts/4e}
+	\subsection[f]{}
+		$dP_s=\frac{-50}{60-(-50)}=-\frac{50}{110}=-.45\\
+		P_d=11.45\\
+		P_s=11.45-1=10.45\\$
+\section[5]{}
+	\subsection[a]{}
+		$$ -.6 = \frac{-.2}{1-\frac{p_1}{p_0}} \Rightarrow \frac{p_1}{p_0} = \frac{4}{3} $$
+	\subsection[b]{}
+		$$ .5 = \frac{-.2}{-\frac{p_q}{p_0}+\frac{p_1}{p_0}} \Rightarrow p_q =  (1.\overline 3 - .6) p_0 = \frac{11}{15}p_0 $$
+\section[6]{}
+	\subsection[a]{}
+		\includegraphics[height=2in]{Charts/6a}
+	\subsection[b]{}
+		\begin{align*}
+			\frac{dQ_s}{dP}=2 \Rightarrow dQ_s = 2*.5 = 1 &\Rightarrow Q_s = 100+1 = 101\\
+			\frac{dQ_D}{dP} = -20 \Rightarrow dQ_D = -20 * .5 = -10	&\Rightarrow Q_D = 100-10 = 90
+		\end{align*}
+		\includegraphics[height=2in]{Charts/6b}
+	\subsection[c]{}
+		$C = (101-90)(2.5) = 27.5.$\\
+		\includegraphics[height=2in]{Charts/6c}
+	\subsection[d]{}
+		\begin{align*}
+			\Delta CS = -(A+B) = -\left [ (2.5-2)(90) + (2.5-2) \left ( \frac{1}{2} \right ) (100-90) \right ] = -47.5\\
+			\Delta PS = A+B+D = (90)(.5)+(101-90)(.5)-(101-100)(.5)(.5) = 50.25 
+		\end{align*}
+		\includegraphics[height=2in]{Charts/6d}
+	\subsection[e]{}
+		$A+B = .5*90 + .5^2*10 = 47.5 $ comes from consumers. $D=(.5)^2(101-90) = 2.75$ comes from government. 
+	\subsection[f]{}
+		The $DWL$ is 2.75. It is the region $D$ in the graph in part (d). 
+	\subsection[g]{}
+		No. The changes in consumer and producer surpluses depend on their elasticities. 
+\section[7]{}
+	\subsection[a]{}
+		$\eta_s = -\frac{1}{2}, \eta_d = 2.$
+	\subsection[b]{}
+		\includegraphics[height=2in]{Charts/7b}
+	\subsection[c]{}
+		$$ \frac{dQ_s}{dP}=80 \Rightarrow dQ_s = -\frac{1}{2}*80 = -40 \Rightarrow 100-40 = 60.$$ \\
+		\includegraphics[height=2.5in]{Charts/7c}
+	\subsection[d]{}
+		$\Delta CS = A-C; \Delta PS = -A - B.$\\
+		\includegraphics[height=2in]{Charts/7d}
+	\subsection[e]{}
+		No. Consumer surplus varies inversely with elasticity of supply. 
+	\subsection[f]{}
+		60. Calculations are shown in part (c). 
+	\subsection[g]{}
+		Transfer = $\frac{1}{2}*60 = 30 $. Loss = $\frac{1}{2}*40*1.5 = 30$.
+	\subsection[h]{}
+		There was no change for consumers. 
+	\subsection[i]{}
+		\includegraphics[height=2.5in]{Charts/7i}\\
+		$\frac{dQ_d}{dP} = -20 \Rightarrow dQ_d  = -20*-\frac{1}{2} = 10.$ Consumers are necessarily better off because shifting supply out increases quantity supplied and reduces price, guaranteeing that consumer surplus will increase. \\
+	\subsection[j]{}
+		Yes. The dead weight loss falls upon the government and is equal to the additional quantity sold times the difference between market value and the government's sale price. $DWL = 10 * .5 = 5.$
+\section[8]{}
+	\subsection[a]{}
+		\begin{align}
+			\setcounter{equation}{0}
+			1000-5P = 4P-80 \\
+			P = 120, Q=1000-5*120=400\\
+			Expenditure = 120*400 = 48000\\
+			PS = \int_{Q=0}^{Q=400}\left(100-\frac{Q}{4}\right)dQ=20000 \\
+			CS = \int_{Q=0}^{Q=400} \left ( 80 - \frac{Q}{5} \right )dQ = 16000			
+		\end{align}
+	\subsection[b]{}
+		$$ \Delta TS = 36000 - \int_{Q=0}^{Q=300}\left(100-\frac{Q}{4}\right)dQ - \int_{Q=0}^{Q=300} \left ( 80 - \frac{Q}{5} \right )dQ = 2250 $$
+	\subsection[c]{}
+		\begin{align*}
+			P=140: CS =  \frac{1}{2}(200-140)(300) = 9000; PS = \frac{1}{2} (95-20)(300)+(140-95)(300)=24750\\
+			P=95:  \frac{1}{2}(200-140)(300)+(140-95)(300) = 22500; PS = \frac{1}{2} (95-20)(300)=11250
+		\end{align*}
+	\subsection[d]{}
+		For $Q=450:$\\
+		$$ P_D = 200 - \frac{450}{5}=110 $$
+		$$ P_s = 20+\frac{450}{4} = 132.5 $$
+		Choosing to keep $P=120:$
+		$$CS =\frac{1}{2}  (200-110)(450) +450*110- (450*120) = 15750; \Delta CS = 250.$$
+		$$PS = 450*120 - \frac{1}{2}(132.5-20)(450)-450*20 = 19687.5; \Delta PS = 312.5.$$
+		$$\Delta TS = 562.5.$$
+		Modifying the price within the 110 to 132.5 range only changes the consumer and producer share of loss, not the total loss. \\
+		\includegraphics[height=2in]{Charts/8d}
+																
+							
+															
+				
+%%%%%% End Content %%%%%%      
+\end{document}

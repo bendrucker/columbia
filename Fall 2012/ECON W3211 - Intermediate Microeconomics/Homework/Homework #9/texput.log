@@ -1,0 +1,22 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  27 NOV 2012 03:12
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/Ben/Documents/School/Columbia University/Fall 2012/Intermediate Microeconomics/Homework/Homework #9/TSWLatexianTemp_000808.tex"
+
+! Emergency stop.
+<*> ...ork/Homework #9/TSWLatexianTemp_000808.tex"
+                                                  
+*** (job aborted, file error in nonstop mode)
+
+ 
+Here is how much of TeX's memory you used:
+ 4 strings out of 493488
+ 225 string characters out of 3141326
+ 49432 words of memory out of 3000000
+ 3412 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

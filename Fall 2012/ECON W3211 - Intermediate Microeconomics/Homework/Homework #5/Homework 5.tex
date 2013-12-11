@@ -1,0 +1,200 @@
+\documentclass{article}
+
+%%%%%% Include Packages %%%%%%
+\usepackage{sectsty}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{setspace}
+\usepackage{graphicx}
+
+%%%%%% Formatting Modifications %%%%%%
+
+\usepackage[margin=2.5cm]{geometry} %% Set margins
+\renewcommand{\thesection}{Question \arabic{section}} %% Prefix section headers
+\renewcommand\thesubsection{(\alph{subsection})} %% Prefix/suffix subsections
+\sectionfont{\sectionrule{0pt}{0pt}{-8pt}{0.8pt}} %% Underscore section headers
+\setstretch{1.2} %% Set 1.2 spacing
+
+%%%%%% Set Homework Variables %%%%%%
+
+\newcommand{\hwkNum}{5}
+\newcommand{\hwkAuthors}{Ben Drucker, Douglas Kessel, Ethan Kochav}
+\newcommand{\hwkDueDate}{\date{10/12/12}}
+
+%%%%%% Set Header/Footer %%%%%%
+
+\pagestyle{fancy} 
+\lhead{\hwkAuthors} 
+\rhead{Homework \#\hwkNum}
+\rfoot{\textit{\footnotesize{\thepage /\pageref{LastPage}}}}
+\cfoot{}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%% Document %%%%%%
+
+\begin{document}
+
+
+
+\title{Homework \#\hwkNum}
+\author{\hwkAuthors}
+\date{\hwkDueDate}
+
+\maketitle
+
+%%%%%% Begin Content %%%%%%
+
+\section[1]{}
+	\subsection[a]{}
+		\includegraphics[height=2in]{Charts/1a}
+	\subsection[b]{}
+		Proportions altered for clarity. Drawing is not properly scaled.  \\
+		\includegraphics[height=3in]{Charts/1b}
+	\subsection[c]{}
+		\begin{align}
+			I &= 2000*80-T \\
+			2000*80>100,000 & \therefore T=10,000 , I=150,000 \\
+			MRS = \frac{L}{y} & =\frac{8,760-2,000}{150,000}=\frac{169}{3750}
+		\end{align}
+	\subsection[d]{}
+		$ 2000(1-.0625)(80) = 150,000 = I_{previous} $. \\
+		\includegraphics[height=3in]{Charts/1d}
+	\subsection[e]{}
+		$ MRS(6760, 150000) = \frac{p_L}{p_y} = 80;$ For $BL_d: \frac{p_L}{p_y} = 80(1-.0625)=75<MRS$ \\ \\
+		$\frac{p_L}{p_Y} = MRS $ at the best bundle, so under the new scheme a worker would need to work less (increase leisure) and decrease consumption to reach his best bundle. Revenue is the vertical distance to the original budget line. Moving right and down along the budget line will therefore reduce revenue. 
+		
+\section[2]{}
+	\subsection[a]{}
+		\begin{align*}
+			400 \alpha + 640 (1-\alpha) &=500 \alpha + 440(1-\alpha)\\
+			\alpha &= \frac{2}{3} 
+		\end{align*}
+	\subsection[b]{}
+		\begin{align}
+			\max_\alpha [U_E] &= .4U(400,000\alpha + 640,000(1-\alpha))+.6U(500,000\alpha+440,000(1-\alpha)) \\
+			\frac{\partial U_E}{\partial \alpha} &=-240,000 (.4)U'(-240,000\alpha+640,000)+60,000(.6)U'(60,000\alpha + 440,000)=0
+		\end{align}
+	\subsection[c]{}
+		For  $ \alpha = \frac{2}{3} $:
+		\setcounter{equation}{0}
+		\begin{align}
+			0 &= 8U' \left ( -240,000 \left ( \frac{2}{3} \right ) + 640,000 \right )
+			-3U' \left (60,000 \left ( \frac{2}{3} \right ) + 440,000 \right ) \\
+			&= 8U'(480,000)-3U'(480,000) \\
+			8U'(480,000) &= 3U'(480,000) \\
+			8 & \not= 3 \\
+			& \therefore \frac{\partial U}{\partial \alpha} \bigg  |_{\alpha = \frac{2}{3}} \not = 0 \\
+		\end{align}
+		Expected utility is therefore not maximized where $ \alpha = \frac{2}{3} $.
+	\subsection[d]{}
+		$$
+			\frac{\partial U_E}{\partial \alpha} \bigg |_{\alpha = \frac{2}{3}} = 36,000U'(480,000)-96,000U'(480,000)<0
+		$$
+		Assuming $ \frac{\partial^2 U}{\partial \alpha^2}<0$, $\alpha_{maximizing}<\frac{2}{3} $
+		
+\section[3]{}
+	\subsection[a]{}
+		\begin{align*}
+			V_E &= \frac{1}{2}(10,000+6,400) = 8,200 \\
+			U_E &=\frac{1}{2}(\ln 10,000 + \ln 6,400) \\
+			CE &= e^{U_E} = 8,000 \\
+			RP &= V_E - CE =200
+		\end{align*}
+	\subsection[b]{}
+		Proportions altered for clarity. Drawing is not properly scaled.  \\
+		\includegraphics[height=3in]{Charts/3b}
+	\subsection[c]{}
+		\begin{align*}
+			V_E &= (.225)(14,400)+(1-.225)(6,400) = 8,200\\
+			U_E &= .225 \ln 14,400 + (1-.225) \ln 6,400 \\
+			CE &= e^{U_E} \approxeq 7,681 \\
+			RP &= E_V - CE \approxeq 519
+		\end{align*}
+		Proportions altered for clarity. Drawing is not properly scaled.  \\
+		\includegraphics[height=3in]{Charts/3c}
+		
+\section[4]{}
+	\subsection[a]{}
+		$ V_E = W + \frac{W}{4} = \frac{5W}{4} $ ; $ U_E = \frac{\ln (2W)}{2} + \frac{\ln \frac{W}{2}}{2} = \ln W $
+	\subsection[b]{}
+		$ CE = e^{\ln W} = W $ ; $ RP = V_E - CE = \frac{W}{4} $
+	\subsection[c]{}
+		\includegraphics[height=3in]{Charts/4c}
+	\subsection[d]{}
+		The certainty equivalent of Fred's investment is equal to the cash he would hold $(CE=W)$. Thus, he is indifferent between holding cash and making the investment under the given information. We would need to know whether or not he is risk-averse in order to decide which of the two options he would choose.
+	\subsection[e]{}
+		\begin{align*}
+			U_E &= 
+			\frac{\ln[2W \alpha+W (1-\alpha)]}{2} + \frac{ \ln \left [ \frac{W \alpha}{2} +W(1-\alpha) \right ]}{2}  \\
+			\max_{\alpha} [U_E] &= 
+			\frac{\ln (\alpha W + W)}{2} + \frac{ \ln \left [ \frac{W \alpha}{2} + W(1-\alpha) \right ]}{2} \\
+			\frac{\partial U_E}{\partial \alpha} &= 
+			\frac{1}{2} \left( \frac{W}{\alpha W + W} - \frac{\frac{\alpha W}{2}}{W-\frac{\alpha W}{2}} \right ) = 0
+		\end{align*}
+	\subsection[f]{}
+		$$
+			\frac{\partial U_E}{\partial \alpha} \bigg |_{\alpha = 0} = 
+			\frac{1}{2} \left( \frac{W}{0 W + W} - \frac{\frac{0 W}{2}}{W-\frac{0 W}{2}} \right )
+			= \frac{1}{2} > 0
+		$$
+		For $ \alpha \in (0,1), U_E > U_{E_{original}} = \ln W $. This increases $CE$ such that $CE>W$. With a certainty equivalent greater than the original value of his investment, Fred will invest some money, meaning $ \alpha \not = 0.$
+	\subsection[g]{}
+		\begin{align*}
+			\frac{W}{\alpha W + W} &= \frac{\frac{\alpha W}{2}}{W-\frac{\alpha W}{2}} \\
+			\alpha &= \frac{1}{2}
+		\end{align*}
+
+\section[5]{}
+	\subsection[a]{}
+		$ W_E = 160,000*.9 + 62,500*.1=150,350 $; $U_E = .9 \sqrt{160,000} + .1 \sqrt{62,500} = 385 $
+	\subsection[b]{}
+		$ CE = 385^2 = 148,225 $
+	\subsection[c]{}
+		$ RP = W_E - CE = 2,025 $
+	\subsection[d]{}
+		Proportions altered for clarity. Drawing is not properly scaled.  \\
+		\includegraphics[height=3in]{Charts/5d}	
+
+\section[6]{}
+	\subsection[a]{}
+		$ I_E = .8 * 1,600 + .2 * 900 = 1,460 $
+	\subsection[b]{}
+		Assigning probabilities to Jeb and George succeeding $(S)$ or failing $(F)$, $ p_{SS} = .8^2 = .64, p_{FF} =.2^2 = .04, p_{SF}=p_{FS} = .8*.2 =.16 $.
+		\begin{align*}
+			I_E &= .64 * 1600 + .04*900 + .16(1600-350) + .16(900+350) \\
+			&= 1,460
+		\end{align*}
+		Because Jeb is risk-averse, he will agree to George's proposal because it reduces risk despite $I_E$ being unchanged.
+	\subsection[c]{}
+		With no proposal, under the new probabilities:
+		$$ U_E = .9 \sqrt{1,600} + .1\sqrt{900}=39 $$
+		
+		Assigning probabilities to Jeb and George (in that order) succeeding $(S)$ or failing $(F)$, $ p_{SS} = .9 * .8 = .72, p_{FF} =.1 * .2 = .02, p_{SF} = .9 * .2 = .18, p_{FS} = .1*.8 = .08 $. With the new probabilities and George's proposal:
+		$$ U_E = .72 \sqrt{1,600} + .02 \sqrt{900} + .18 \sqrt{1,250} + .08 \sqrt{1,250} \approxeq 38.59 < U_{E_{original}} =39 $$
+		Jeb will therefore reject the proposal under his new probabilities.
+	\subsection[d]{}
+		Defining Jeb's maximum contribution as $x$,
+		$$U_{E_{original}} = 39 = 	.72 \sqrt{1,600} + .02 \sqrt{900} + .18 \sqrt{1600 - x} + .08 \sqrt{1,250} $$
+		$$ x \approxeq 184.75 $$
+
+\section[7]{}
+	\subsection[a]{}
+		Defining the payoff of the bet when the team wins as $p_w$ and losses as $L=-p_w$:
+		\setcounter{equation}{0}
+		\begin{align}
+			0 &= 1(1-\theta)+p_w \theta \\
+			\frac{1-\theta}{\theta} &= L
+		\end{align}
+	\subsection[b]{}
+		The amount of your bet is defined as $x$ .
+		$$ 500 - x \left ( \frac{1-\theta}{\theta}  \right ) = 50-x$$
+		$$ x(\theta) = 450\theta $$
+	\subsection[d]{}
+		$$ x(.6) = 270 $$
+			
+			
+			
+%%%%%% End Content %%%%%%			
+\end{document}
